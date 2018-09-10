@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Cousine|Roboto');
+
+//@import url("buttons.css");
+
+// Our variables
+$base-font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$header-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$header-font-weight: 400;
+$header-font-style: normal;
+$base-font-size:   15px;
+$base-font-weight: 300;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.2;
+
+$spacing-unit:     30px;
+
+$blue:            #116AEC;
+$green:            #1BBC9B;
+$yellow:           #F7D77A;
+
+$text-color:        #222;
+$background-color:  #FFFFFF;
+$brand-color:       #1BBC9B;
+$brand-color-light: rgba(27,188,155, 0.1);
+$brand-color-lighter: rgba(27,188,155, 0.5);
+$brand-color-dark:  $brand-color;
+
+$header-color: $text-color;
+$hover-color: $header-color;
+$footer-color: $header-color;
+
+$grey-color:       #828282;
+$grey-color-light: #EEF0FA;
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+// Width of the content area
+$content-width:    900px;
+
+$on-palm:          600px;
+$on-laptop:        900px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import
+        "../_sass/base",
+        "../_sass/layout",
+        "../_sass/syntax-highlighting"
+;
+
+.no-lpadding {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.no-rpadding {
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.top-padding {
+  padding-top: 30px;
+}
+
+.bottom-padding {
+  padding-bottom: 30px;
+}
+
+section {
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+}
+
+b {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 24px;
+  padding-bottom: 6px;
+  padding-top: 4px;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+.page-link:hover {
+  color: $hover-color !important;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 13px;
+  color: $text-color;
+  display: inline-block;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 3px;
+  border: 1px solid #888;
+  background-color: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 4px;
+}
+
+button:hover {
+  color: $brand-color;
+  border-color: $brand-color;
+  background-color: $brand-color-light;
+}
+
+button:focus { outline:0; }
+
+.project-thumb {
+  width: 300px;
+  height: auto;
+}
+
+.project-thumb:hover {
+  background: rgba(0,0,255, 0.5)
+}
+
+.copyright {
+  color: $grey-color;
+}
+
+figure figcaption {
+  text-align: center;
+}
+
+.site-header {
+  .wrapper {
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.parallelogram {
+  background-color: $yellow;
+  border-radius: 100%;
+}
+
+#home-profile {
+  width:170px;
+  height:auto;
+  border-radius:100%;
+ // -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+ // box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.newslist-date {
+  text-transform: uppercase;
+  width:90px;
+  display:block;
+  float:left;
+  font-weight:400;
+}
+
+dd {
+  margin-left: 6em;
+  margin-bottom: 0.3em;
+}
+
+dd.all {
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eee;
+}
+
+i.far, i.fas, i.fab {
+  margin-right: 4px;
+}
+
+i.fa-xs { margin: 0; }
+
+.showmore {
+  font-size: 16px;
+}
+
+.mono {
+  font-size: 13px;
+  font-family: "Cousine", monospace;
+}
+
+.container.cv {
+  margin-bottom: $spacing-unit;
+}
+
+.row.cv {
+  margin-bottom: 8px;
+
+  .sep {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    text-align: right;
+    border-right: 1px solid #eee;
+
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+  }
+
+  ul li {
+      list-style-type: none;
+  }
+
+  .col-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    max-width: 85%;
+  }
+
+  .col-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 85%;
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+}
+
+.alert {
+  position: relative;
+  padding: 8px 12px;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: $brand-color-light;
+  border-color: $brand-color-lighter;
+}

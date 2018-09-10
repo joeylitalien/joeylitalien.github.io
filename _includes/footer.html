@@ -1,0 +1,67 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+         <a class="mono" href="mailto:{{site.email}}">{{site.email}}</a>
+        <ul class="contact-list">
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.mathstack_username %}
+          <li>
+            <a href="https://math.stackexchange.com/users/{{ site.mathstack_username }}">
+              <i class="fab fa-stack-exchange"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <li>
+            <a href="https://ca.linkedin.com/in/{{ site.linkedin_username }}">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.fb_username %}
+          <li>
+            <a href="https://fb.com/{{ site.linkedin_username }}">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.spotify_username %}
+          <li>
+            <a href="https://open.spotify.com/user/{{ site.spotify_username }}">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+        <span class="copyright">Copyright &copy; 2018 Joey Litalien</a>
+      </div>
+
+      <!-- <div class="footer-col footer-col-3">
+        <p><i>Science is what we understand well enough to explain to a computer. Art is everything else we do.</i> <br>&mdash; Donald Knuth
+        </p>
+        <p>
+          Built with <a href="https://github.com/jekyll/jekyll">Jekyll</a>, <a href="http://daringfireball.net/projects/markdown/">Markdown</a> &amp;
+          <a href="https://www.mathjax.org/">MathJax</a>.
+        </p>
+      </div> -->
+    </div>
+
+  </div>
+
+</footer>

@@ -1,0 +1,20 @@
+
+  <div class="row cv">
+    <div class="col-2 sep">
+      {% if include.skills %}
+        <b>{{ include.left }}</b>
+      {% else %}
+        {{ include.left }}
+      {% endif %}
+    </div>
+    <div class="col-10 no-rpadding">
+      {% if include.skills %}
+        {{ include.description }}
+      {% else %}
+        <b>{{ include.title}}</b> {{ include.subtitle }}
+        {% if include.description %}
+          <p>{{ include.description }}</p>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>

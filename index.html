@@ -1,0 +1,91 @@
+---
+layout: default
+---
+<div class="home">
+  <section>
+    <h1>Bonjour, Hello!</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-2 no-lpadding">
+           <img src="assets/joey_i3d.png" id="home-profile"/>
+        </div>
+        <div class="col-10 no-rpadding">
+            <p>I am a master student at the <a href="http://gfx.lab.mcgill.ca/">
+              McGill Graphics &amp; Imaging Lab (GIL)</a>, working under
+              <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>.
+              My main research interests lie at the intersection of physically-based
+              rendering and machine learning. More precisely, I am interested in
+              applying deep learning techniques to light transport simulations.</p>
+
+            <p>If you'd like to chat, feel free to send me an <a href="mailto:{{site.email}}">email</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Latest News <span class="showmore"><a href="news">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
+    <dl>
+    {% assign news = site.data.news | sort: 'date' | reverse %}
+    {% for n in news limit:3 %}
+    <dt class="newslist-date">{{ n.date }}</dt>
+    <dd>{{ n.news }}</dd>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h1>Selected Projects <span class="showmore"><a href="portfolio">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
+    <div class="container">
+      {% assign projects = site.projects | sort: 'featured' | reverse %}
+      {% for p in projects limit:3 %}
+      {% if p.featured > 0 %}
+      <div class="row bottom-padding">
+        <div class="col-5 no-padding">
+            <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+        </div>
+        <div class="col-7 no-rpadding">
+          <h2><a href="{{ p.permalink }}">{{ p.short-title }}</a></h2>
+          <p>{{ p.summary }}</p>
+          <p>
+          {% if p.project-type %}
+          <a href="{{ p.permalink }}">
+            <button>
+              {% if p.project-type == "PDF Report" %}
+                <i class="far fa-file-pdf"></i>
+              {% else %}
+                <i class="fas fa-globe-americas"></i>
+              {% endif %}
+              {{ p.project-type }}
+            </button>
+          </a>
+          {% endif %}
+          {% if p.github %}
+            <a href="{{ p.github }}"><button><i class="fab fa-github"></i> GitHub</button></a>
+          {% endif %}
+          </p>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+  </section>
+
+  <!--
+  <h2>Recent posts</h2>
+
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}  /
+          {% for category in post.category %}
+            <a href="{{category}}">{{category}}</a>
+          {% endfor %}
+        </span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+  view more posts in the <a href="/archive">archive</a>-->
+
+</div>
