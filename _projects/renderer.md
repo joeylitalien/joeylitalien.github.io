@@ -8,7 +8,6 @@ thumbnail: /assets/thumbnails/renderer-thumb.png
 summary: Work-in-progress physically-based renderer written in C++11 with a focus on state-of-the-art light transport algorithms and material models.
 project-type: Project Page
 permalink: /projects/renderer
-github: https://github.com/joeylitalien/nori
 featured: 3
 ---
 
