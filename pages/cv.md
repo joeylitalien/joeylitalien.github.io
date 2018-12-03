@@ -79,10 +79,17 @@ See [Portfolio](/portfolio).
 # Talks & Leadership
 <div class="container cv">
 {% include resume-item.html
+      left="Nov 2018"
+      title="MOTOGRAPH,"
+      subtitle="<i>a Montreal-Toronto area graphics seminar,</i> Université de Montréal, QC"
+      description="Oral presentation"
+%}
+
+{% include resume-item.html
       left="Dec 2017"
       title="TOMOGRAPH,"
-      subtitle="<i>a graphics seminar for pre-SIGGRAPH publication push,</i> Toronto ON, Canada"
-      description="Best presentation award as voted by graduate attendees (≈50) from UToronto, UWaterloo and McGill University"
+      subtitle="<i>a Toronto-Montreal area graphics seminar,</i> University of Toronto, ON"
+      description="Best presentation award"
 %}
 
 {% include resume-item.html
