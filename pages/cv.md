@@ -17,12 +17,24 @@ order: 3
 # Education
 <div class="container cv">
 {% include resume-item.html
-      left="Jan 2017<br> to Present"
+      left="Jan 2019<br> to Present"
+      title="McGill University,"
+      subtitle="Montréal, QC, Canada"
+      description="<ul>
+        <li><i>Doctor of Philosophy</i>, Electrical & Computer Engineering (ECE)</li>
+        <li>Advisor: Derek Nowrouzezahrai</li>
+        <li>McGill Engineering Doctorate Award (2019)</li>
+      </ul>
+      "
+%}
+
+{% include resume-item.html
+      left="Jan 2017<br> to Dec 2018"
       title="McGill University,"
       subtitle="Montréal, QC, Canada"
       description="<ul>
         <li><i>Master of Engineering</i>, Electrical & Computer Engineering (ECE)</li>
-        <li>Advisor: Derek Nowrouzezahrai</li>
+        <li>Thesis: <i>Learning Visibility in Ray Space</i> (Advisor: Derek Nowrouzezahrai)</li>
         <li>Graduate Excellence Fellowship Awards (2017 & 2018)</li>
       </ul>
       "
@@ -41,8 +53,8 @@ order: 3
 {% include resume-item.html
       skills=true
       left="Programming<br>AI Libaries<br>Tools<br>Web<br>Languages"
-      description="C++11 · C · Python · Bash/UNIX — Familiar with Java · OpenGL · GLSL<br>PyTorch · Keras · scikit-learn — Familiar with TensorFlow<br>
-        vim · git · MATLAB · Mathematica · Maplesoft · LaTeX · Illustrator<br>HTML5 · CSS3/Sass · JavaScript · MeteorJS — Familiarity with MongoDB<br>English (full professional proficiency) · French (mother tongue)"
+      description="C++11 · C · Python 3 · Bash/UNIX — Familiar with Java · OpenGL · GLSL<br>PyTorch · Keras · scikit-learn — Familiar with TensorFlow<br>
+        vim · git · MATLAB · Mathematica · Maplesoft · LaTeX · Illustrator<br>HTML5 · CSS3/Sass · JavaScript · MeteorJS — Familiarity with MongoDB<br>English (full professional proficiency) · Français (mother tongue)"
 %}
 </div>
 
