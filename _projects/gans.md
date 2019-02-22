@@ -7,7 +7,7 @@ tag: deep-learning
 thumbnail: /assets/thumbnails/gans-thumb.png
 summary: Implementation of different generative adversarial networks in PyTorch for small CelebA face generation.
 project-type: PDF Report
-permalink: /assets/reports/gans.pdf
+project-link: /assets/reports/gans.pdf
 github: https://github.com/joeylitalien/celeba-gan-pytorch
 featured: -1
 ---

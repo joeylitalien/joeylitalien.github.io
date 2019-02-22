@@ -14,14 +14,14 @@ order: 2
   {% if p.tag == "graphics" %}
   <div class="row bottom-padding">
     <div class="col-5 no-lpadding">
-        <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+        <img class="project-thumb" src="{{ p.thumbnail }}"/>
     </div>
     <div class="col-7 no-rpadding">
       <h2><a href="{{ p.permalink }}">{{ p.short-title }}</a></h2>
       <p>{{ p.summary }}</p>
       <p>
       {% if p.project-type %}
-      <a href="{{ p.permalink }}">
+      <a href="{{ p.project-link }}">
         <button>
           {% if p.project-type == "PDF Report" %}
             <i class="far fa-file-pdf"></i>
@@ -54,14 +54,14 @@ order: 2
   {% if p.tag == "deep-learning" %}
   <div class="row bottom-padding">
     <div class="col-5 no-lpadding">
-        <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+        <img class="project-thumb" src="{{ p.thumbnail }}"/>
     </div>
     <div class="col-7 no-rpadding">
-      <h2><a href="{{ p.permalink }}">{{ p.short-title }}</a></h2>
+      <h2><a href="{{ p.project-link }}">{{ p.short-title }}</a></h2>
       <p>{{ p.summary }}</p>
       <p>
       {% if p.project-type %}
-      <a href="{{ p.permalink }}">
+      <a href="{{ p.project-link }}">
         <button>
           {% if p.project-type == "PDF Report" %}
             <i class="far fa-file-pdf"></i>
