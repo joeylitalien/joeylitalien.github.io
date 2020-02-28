@@ -1,0 +1,199 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <!-- Paper title -->
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    <!-- Authors -->
+    <ul class="authors">
+      {% for a in page.authors %}
+      <li>
+        {% if a.author.link %} 
+          <a href="{{ a.author.link }}">{{ a.author.name }}</a>
+          {%- if a.author.order == 1 -%}*{%- endif -%},
+        {% else %} 
+          {{ a.author.name }}{%- if a.author.order == 1 -%}*{%- endif -%},
+        {% endif %} {{ a.author.institution }}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <!-- Journal/conference title -->
+    <p>In 
+      <i>{{ page.journal }}</i>
+      {%- if page.journal-note -%}
+        <i> ({{ page.journal-note }})</i>,
+      {% else %},{% endif %}
+      {{ page.year }}</br>
+      {% if page.authors.first.author.order == 1 %}
+        *Authors with equal contribution
+      {% endif %}
+    </p>
+
+    <!-- Teaser figure-->
+    <figure>
+      <a href="{{ page.teaser }}"><img src="{{ page.teaser }}" class="teaser"></a>
+      <p style="font-size:13px" class="justified">{{ page.teaser-caption }}</p>
+    </figure>
+  </header>
+
+  <div class="post-content">
+    <!-- Abstract -->
+    <h1>Abstract</h1>
+    <p class="justified">{{ page.abstract }}</p>
+
+    <!-- Download links -->
+    {% if dl.published %}
+    <h1>Downloads</h1>
+    {% assign dl = page.downloads %}
+    <p>
+      <h3>Publication</h3>
+      <ul class="fa-ul">
+        {% if dl.paper.file and dl.published %}
+        <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+          <a href="{{ dl.paper.file }}">Paper, PDF ({{ dl.paper.size}})</a>
+        </li>
+        {% endif %}
+        {% if dl.paper.file-lowres %}
+        <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+          <a href="{{ dl.paper.file-low }}">Paper (low-quality), PDF ({{ dl.paper.size-lowres}})</a>
+        </li>
+        {% endif %}
+        {% if dl.doi.url %}
+        <li><span class="fa-li"><i class="fas fa-atlas"></i></span>
+          <a href="{{ dl.doi.url }}">Publisher's official version (external link, may require a subscription)</a>
+        </li>
+        {% endif %}
+      </ul>
+      {% if dl.supplementary.file or dl.supplementary.url %}
+      <h3>Supplementals</h3>
+      <ul class="fa-ul">
+        {% if dl.supplementary.file %}
+        <li><span class="fa-li"><i class="far fa-file-archive"></i></span>
+          <a href="{{ dl.supplementary.url }}">Supplemental archive with interactive viewer, ZIP ({{ dl.supplementary.size }})</a>
+        </li>
+        {% endif %}
+        {% if dl.supplementary.url %}
+        <li><span class="fa-li"><i class="far fa-eye"></i></span>
+          <a href="{{ dl.supplementary.url }}">Supplemental with interactive viewer (web)</a> &ndash; an interactive comparison of the results
+        </li>
+        {% endif %}
+      </ul>
+      {% endif %}
+      {% if dl.slides.file or dl.slides.file-key %}
+      <h3>Slides</h3>
+      <ul class="fa-ul">
+        {% if dl.slides.file %}
+        <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+          <a href="{{ dl.slides.file }}">Presentation slides, PDF ({{ dl.video.size }})</a>
+        </li>
+        {% endif %}
+        {% if dl.slides.file-key %}
+        <li><span class="fa-li"><i class="far fa-file-image"></i></span>
+          <a href="{{ dl.slides.file-key }}">Presentation slides, Keynote ({{ dl.slides.size-key }})</a>
+        </li>
+        {% endif %}
+      </ul>
+      {% endif %}
+      {% if dl.video.file or dl.video.url %}
+      <h3>Video</h3>
+      <ul class="fa-ul">
+        {% if dl.video.file %}
+        <li><span class="fa-li"><i class="far fa-file-video"></i></span>
+          <a href="{{ dl.video.file }}">Video (full-quality), MP4 ({{ dl.video.size }})</a>
+        </li>
+        {% endif %}
+        {% if dl.video.url %}
+        <li><span class="fa-li"><i class="far fa-play-circle"></i></span>
+          <a href="{{ dl.video.url }}">Video (Youtube)</a>
+        </li>
+        {% endif %}
+      </ul>
+      {% endif %}
+      {% if dl.code.file or dl.code.url %}
+      <h3>Code</h3>
+      <ul class="fa-ul">
+        {% if dl.code.file %}
+        <li><span class="fa-li"><i class="far fa-file-code"></i></span>
+          <a href="{{ dl.code.url }}">Code archive, ZIP ({{ dl.code.size }})</a>
+        </li>
+        {% endif %}
+        {% if dl.code.url %}
+        <li><span class="fa-li"><i class="fab fa-github"></i></span>
+          <a href="{{ dl.code.url }}">Code repository (Git)</a>
+        </li>
+        {% endif %}
+      </ul>
+      {% endif %}
+      {% if dl.bibtex.file %}
+      <h3>BibTeX</h3>
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fas fa-quote-left"></i></span>
+          <a href="{{ dl.bibtex.file }}">BibTeX Reference ({{ dl.bibtex.size }})</a>
+        </li>
+        {% endif %}
+      </ul>
+    </p>
+    {% endif %}
+
+    <!-- Video embedding -->
+    {% if page.video %}
+    <h1>Video</h1>
+    <div class="video-container">
+      <iframe frameborder="0" class="video" src="{{ page.video }}"></iframe>
+    </div>
+    {% endif %}
+
+    <!-- Thanks -->
+    {% if page.acknowledgements %}
+    <h1>Acknowledgements</h1>
+    <p class="justified">
+      {{ page.acknowledgements }}
+    </p>
+    {% endif %}
+
+    <!-- BibTeX citation -->
+    {% if dl.published %}
+    <h1>Cite</h1>
+    <blockquote class="justified">
+      {% for a in page.authors %}
+        {% if forloop.last %}
+          {% if forloop.length != 1 %}
+            and 
+            {% if a.author.link %} 
+              <a href="{{ a.author.link }}">{{ a.author.name }}</a>.
+            {% else %}
+              {{ a.author.name }}.
+            {% endif %}
+          {% else %}
+            {% if a.author.link %} 
+              <a href="{{ a.author.link }}">{{ a.author.name }}</a>.
+            {% else %}
+              {{ a.author.name }}.
+            {% endif %}
+          {% endif %}
+        {% else %} 
+          {% if a.author.link %} 
+            <a href="{{ a.author.link }}">{{ a.author.name }}</a>, 
+          {% else %}
+            {{ a.author.name }},
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {{ page.title }}. <i>{{ page.journal }}</i>, 
+      {{ page.volume }}({{ page.number }}), 
+      {{ page.month }} {{ page.year }}.
+    </blockquote class="justified">
+
+    <pre><code>{{- page.tex -}}</code></pre>
+    
+    {% endif %}
+
+    <!-- Other content -->
+    {{ content }}
+  </div>
+
+</article>
