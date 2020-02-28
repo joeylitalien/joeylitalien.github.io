@@ -2,6 +2,7 @@
 layout: page
 short-title: Nenufar Renderer
 title: Nenufar Renderer
+date: 2017-01-01
 subtitle: A physically-based photorealistic renderer
 tag: graphics
 thumbnail: /assets/thumbnails/renderer-thumb.png

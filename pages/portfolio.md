@@ -82,8 +82,8 @@ order: 2
 # Other Projects
 <section>
   <div class="container">
-    {% assign projects = site.projects | sort: 'featured' | reverse %}
-    {% for p in projects limit:5%}
+    {% assign projects = site.projects | sort: 'date' | reverse %}
+    {% for p in projects limit:4%}
     <div class="row bottom-padding">
       <div class="col-2 no-padding">
         <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
