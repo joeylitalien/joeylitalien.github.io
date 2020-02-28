@@ -10,12 +10,13 @@ layout: default
            <img src="assets/joey_i3d.png" id="home-profile"/>
         </div>
         <div class="col-10 no-rpadding">
-            <p>I am Ph.D. student at the <a href="http://gfx.lab.mcgill.ca/">
+            <p class="justified">I am a Ph.D. student at the <a href="http://gfx.lab.mcgill.ca/">
               McGill Graphics &amp; Imaging Lab (GIL)</a>, working under
               <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>.
               My main research interests lie at the intersection of physically-based
-              rendering and machine learning. More precisely, I am interested in
-              applying deep learning techniques to light transport simulations.</p>
+              rendering and machine learning. More precisely, I am interested in applying deep learning techniques to improve current physically-based rendering algorithms (e.g., denoising, path guiding, sampling). 
+              I also have an interest for differentiable rendering and Markov chain Monte Carlo methods for light transport simulations.
+            </p>
 
             <p>If you'd like to chat, feel free to send me an <a href="mailto:{{site.email}}">email</a>.</p>
         </div>
@@ -26,66 +27,116 @@ layout: default
   <section>
     <h1>Latest News <span class="showmore"><a href="news">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
     <dl>
-    {% assign news = site.data.news | sort: 'date' | reverse %}
-    {% for n in news limit:3 %}
-    <dt class="newslist-date">{{ n.date }}</dt>
-    <dd>{{ n.news }}</dd>
-    {% endfor %}
+      {% assign news = site.data.news | sort: 'date' | reverse %}
+      {% for n in news limit:3 %}
+        <dt class="newslist-date">{{ n.date }}</dt>
+        <dd>{{ n.news }}</dd>
+      {% endfor %}
+    </dl>
+  </section>
+
+  <section>
+    <h1>Recent Publications <span class="showmore"><a href="portfolio">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
+    <div class="container">
+      {% assign pubs = site.publications | sort: 'featured' %}
+      {% for p in pubs limit:1 %}
+      <div class="row bottom-padding">
+        <div class="col-2 no-padding">
+            <a href="{{ p.permalink }}">
+              <img class="project-thumb" src="{{ p.thumbnail }}"/
+            ></a>
+        </div>
+        <div class="col-10 no-rpadding">
+          <h3><a href="{{ p.permalink }}">{{ p.title }}</a></h3>
+          <p>
+            <!-- List of authors -->
+            {% for a in p.authors %}
+              {% if forloop.last and forloop.length != 1 %}
+                and 
+                {% if a.author.name == "Joey Litalien" %}
+                  <b>{{ a.author.name }}</b>
+                {% else %}
+                  {{ a.author.name }}
+                {% endif %}
+              {% else %} 
+                {% if a.author.name == "Joey Litalien" %}
+                  <b>{{ a.author.name }}</b>{% if forloop.length != 1 %}, {% endif %}
+                {% else %}
+                  {{ a.author.name }},
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            <br>
+            <!-- Journal information -->
+            <i>
+              {{ p.journal }}
+              {% if p.journal-note %}
+                ({{ p.journal-note }}),
+              {% endif %}
+            </i> 
+            {% assign dl = p.downloads %}
+            {% if dl.published %} {{ p.month }} {% endif %} {{ p.year }}
+          </p>
+          <ul class="fa-ul inline-list">
+            <li class="fa-li"><i class="fas fa-globe-americas"></i>
+              <a href="{{ p.permalink }}">Project page</a>
+            </li>
+            {% if dl.published %}
+              <li class="fa-li"><i class="far fa-file-pdf"></i>
+                <a href="{{ dl.paper.file }}">Paper ({{ dl.paper.size }} pdf)</a>
+              </li>
+              {% if dl.doi.url %}
+              <li class="fa-li"><i class="fas fa-atlas"></i>
+                <a href="{{ dl.doi.url }}">Publisher's version</a>
+              </li>
+              {% endif %}
+              {% if dl.supplementary.file %}
+              <li class="fa-li"><i class="far fa-file-archive"></i>
+                <a href="{{ dl.supplementary.url }}">Supplemental</a>
+              </li>
+              {% endif %}
+              {% if dl.code.url %}
+              <li class="fa-li"><i class="fab fa-github"></i>
+                <a href="{{ dl.code.url }}">Code</a>
+              </li>
+              {% endif %}
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </section>
 
   <section>
     <h1>Selected Projects <span class="showmore"><a href="portfolio">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
     <div class="container">
       {% assign projects = site.projects | sort: 'featured' | reverse %}
-      {% for p in projects limit:3 %}
-      {% if p.featured > 0 %}
-      <div class="row bottom-padding">
-        <div class="col-5 no-padding">
-            <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
-        </div>
-        <div class="col-7 no-rpadding">
-          <h2><a href="{{ p.permalink }}">{{ p.short-title }}</a></h2>
-          <p>{{ p.summary }}</p>
-          <p>
-          {% if p.project-type %}
-          <a href="{{ p.project-link }}">
-            <button>
-              {% if p.project-type == "PDF Report" %}
-                <i class="far fa-file-pdf"></i>
-              {% else %}
-                <i class="fas fa-globe-americas"></i>
+      {% for p in projects limit:2 %}
+        {% if p.featured > 0 %}
+        <div class="row bottom-padding">
+          <div class="col-2 no-padding">
+              <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+          </div>
+          <div class="col-10 no-rpadding">
+            <h3><a href="{{ p.permalink }}">{{ p.short-title }}</a></h3>
+            <p class="justified">{{ p.summary }}</p>
+            <ul class="fa-ul inline-list">
+              {% if p.report.file %}
+              <li class="fa-li"><i class="far fa-file-pdf"></i>
+                <a href="{{ dl.paper.file }}">Report ({{ p.report.size }} pdf)</a>
+              </li>
               {% endif %}
-              {{ p.project-type }}
-            </button>
-          </a>
-          {% endif %}
-          {% if p.github %}
-            <a href="{{ p.github }}"><button><i class="fab fa-github"></i> GitHub</button></a>
-          {% endif %}
-          </p>
+              {% if p.code.url %}
+              <li class="fa-li"><i class="fab fa-github"></i>
+                <a href="{{ p.code.url }}">Code repository (Git)</a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
         </div>
-      </div>
-      {% endif %}
+        {% endif %}
       {% endfor %}
   </section>
-
-  <!--
-  <h2>Recent posts</h2>
-
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}  /
-          {% for category in post.category %}
-            <a href="{{category}}">{{category}}</a>
-          {% endfor %}
-        </span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  view more posts in the <a href="/archive">archive</a>-->
 
 </div>

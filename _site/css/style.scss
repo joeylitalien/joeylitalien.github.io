@@ -186,7 +186,7 @@ dd.all {
 }
 
 i.far, i.fas, i.fab {
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 i.fa-xs { margin: 0; }
@@ -254,4 +254,44 @@ i.fa-xs { margin: 0; }
   border-radius: 3px;
   background-color: $brand-color-light;
   border-color: $brand-color-lighter;
+}
+
+.authors {
+  list-style-type: none;
+  padding: 0;
+  margin: 0px 0px 15px 0px;
+  font-size: 18px;
+}
+
+.teaser {
+  margin-bottom: 6px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 15px;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.inline-list {
+  margin-left: 2em !important;
+  margin-bottom: 0px;
+
+  li {
+    display: inline;
+    padding-right: 6px;
+  }
 }

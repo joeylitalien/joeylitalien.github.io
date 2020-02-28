@@ -1,6 +1,6 @@
 ---
 layout: page
-title: All News
+title: News
 icon: <i class="far fa-newspaper"></i>
 permalink: /news/
 order: -1

@@ -1,5 +1,14 @@
+- date: 2020.01.30
+  news: Our paper on applying delayed rejection to Metropolis light transport was accepted to TOG.
+
+- date: 2019.12.01
+  news: I will be presenting some of my early research work at MOTOGRAPH 2019 held at UWaterloo.
+
+- date: 2019.11.04
+  news: I will be interning as a research scientist at <a href="https://nv-tlabs.github.io/">NVIDIA AI</a> (<a href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>'s group) next summer in Toronto.
+
 - date: 2018.11.18
-  news: I will be presenting (with D. Rioux & N. Vibert) some of our early work on MCMC for rendering at MOTOGRAPH held at Université de Montréal.
+  news: I will be presenting (with D. Rioux-Lavoie & N. Vibert) some of our early work on MCMC for rendering at MOTOGRAPH held at Université de Montréal.
 
 - date: 2018.11.10
   news: I will be starting my Ph.D. at McGill in January 2019. 

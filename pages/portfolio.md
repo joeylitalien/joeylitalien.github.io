@@ -6,81 +6,105 @@ permalink: /portfolio/
 order: 2
 ---
 
-# Computer Graphics
-
-<div class="container">
-  {% assign projects = site.projects | reverse %}
-  {% for p in projects %}
-  {% if p.tag == "graphics" %}
-  <div class="row bottom-padding">
-    <div class="col-5 no-lpadding">
-        <img class="project-thumb" src="{{ p.thumbnail }}"/>
-    </div>
-    <div class="col-7 no-rpadding">
-      <h2><a href="{{ p.permalink }}">{{ p.short-title }}</a></h2>
-      <p>{{ p.summary }}</p>
-      <p>
-      {% if p.project-type %}
-      <a href="{{ p.project-link }}">
-        <button>
-          {% if p.project-type == "PDF Report" %}
-            <i class="far fa-file-pdf"></i>
-          {% else %}
-            <i class="fas fa-globe-americas"></i>
+# Publications
+<section>
+  <div class="container">
+    {% assign pubs = site.publications %}
+    {% for p in pubs limit:2 %}
+    <div class="row bottom-padding">
+      <div class="col-2 no-padding">
+        <a href="{{ p.permalink }}">
+          <img class="project-thumb" src="{{ p.thumbnail }}">
+        </a>
+      </div>
+      <div class="col-10 no-rpadding">
+        <h3><a href="{{ p.permalink }}">{{ p.title }}</a></h3>
+        <p>
+          <!-- List of authors -->
+          {% for a in p.authors %}
+            {% if forloop.last and forloop.length != 1 %}
+              and 
+              {% if a.author.name == "Joey Litalien" %}
+                <b>{{ a.author.name }}</b>
+              {% else %}
+                {{ a.author.name }}
+              {% endif %}
+            {% else %} 
+              {% if a.author.name == "Joey Litalien" %}
+                <b>{{ a.author.name }}</b>{% if forloop.length != 1 %}, {% endif %}
+              {% else %}
+                {{ a.author.name }},
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          <br>
+          <!-- Journal information -->
+          <i>
+            {{ p.journal }}
+            {% if p.journal-note %}
+              ({{ p.journal-note }}),
+            {% endif %}
+          </i> 
+          {% assign dl = p.downloads %}
+          {% if dl.published %} {{ p.month }} {% endif %} {{ p.year }}
+        </p>
+        <ul class="fa-ul inline-list">
+          <li class="fa-li"><i class="fas fa-globe-americas"></i>
+            <a href="{{ p.permalink }}">Project page</a>
+          </li>
+          {% if dl.published %}
+            <li class="fa-li"><i class="far fa-file-pdf"></i>
+              <a href="{{ dl.paper.file }}">Paper ({{ dl.paper.size }} pdf)</a>
+            </li>
+            {% if dl.doi.url %}
+            <li class="fa-li"><i class="fas fa-atlas"></i>
+              <a href="{{ dl.doi.url }}">Publisher's version</a>
+            </li>
+            {% endif %}
+            {% if dl.supplementary.file %}
+            <li class="fa-li"><i class="far fa-file-archive"></i>
+              <a href="{{ dl.supplementary.url }}">Supplemental</a>
+            </li>
+            {% endif %}
+            {% if dl.code.url %}
+            <li class="fa-li"><i class="fab fa-github"></i>
+              <a href="{{ dl.code.url }}">Code</a>
+            </li>
+            {% endif %}
           {% endif %}
-          {{ p.project-type }}
-        </button>
-      </a>
-      {% endif %}
-      {% if p.github %}
-        <a href="{{ p.github }}"><button><i class="fab fa-github"></i> GitHub</button></a>
-      {% endif %}
-      {% if p.video %}
-        <a href="{{ p.video }}"><button><i class="far fa-play-circle"></i> Video</button></a>
-      {% endif %}
-      </p>
+        </ul>
+      </div>
     </div>
+    {% endfor %}
   </div>
-  {% endif %}
-  {% endfor %}
-</div>
+</section>
 
-
-# Deep Learning
-
-<div class="container">
-  {% assign projects = site.projects | reverse %}
-  {% for p in projects %}
-  {% if p.tag == "deep-learning" %}
-  <div class="row bottom-padding">
-    <div class="col-5 no-lpadding">
-        <img class="project-thumb" src="{{ p.thumbnail }}"/>
-    </div>
-    <div class="col-7 no-rpadding">
-      <h2><a href="{{ p.project-link }}">{{ p.short-title }}</a></h2>
-      <p>{{ p.summary }}</p>
-      <p>
-      {% if p.project-type %}
-      <a href="{{ p.project-link }}">
-        <button>
-          {% if p.project-type == "PDF Report" %}
-            <i class="far fa-file-pdf"></i>
-          {% else %}
-            <i class="fas fa-globe-americas"></i>
+# Other Projects
+<section>
+  <div class="container">
+    {% assign projects = site.projects | sort: 'featured' | reverse %}
+    {% for p in projects limit:5%}
+    <div class="row bottom-padding">
+      <div class="col-2 no-padding">
+        <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+      </div>
+      <div class="col-10 no-rpadding">
+        <h3><a href="{{ p.permalink }}">{{ p.short-title }}</a></h3>
+        <p class="justified">{{ p.summary }}</p>
+        <ul class="fa-ul inline-list">
+          {% if p.report.file %}
+          <li class="fa-li"><i class="far fa-file-pdf"></i>
+            <a href="{{ p.report.file }}">Report ({{ p.report.size }} pdf)</a>
+          </li>
           {% endif %}
-          {{ p.project-type }}
-        </button>
-      </a>
-      {% endif %}
-      {% if p.github %}
-        <a href="{{ p.github }}"><button><i class="fab fa-github"></i> GitHub</button></a>
-      {% endif %}
-      {% if p.video %}
-        <a href="{{ p.video }}"><button><i class="far fa-play-circle"></i> Video</button></a>
-      {% endif %}
-      </p>
+          {% if p.code.url %}
+          <li class="fa-li"><i class="fab fa-github"></i>
+            <a href="{{ p.code.url }}">Code repository (Git)</a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
-  </div>
-  {% endif %}
   {% endfor %}
-</div>
+  </div>
+</section>

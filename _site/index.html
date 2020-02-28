@@ -21,7 +21,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@JoeyLitalien">
   <meta name="twitter:title" content="Joey Litalien">
-  <meta name="twitter:description" content="Personal website where I write about math, programming and design.">
+  <meta name="twitter:description" content="Personal research website">
   <meta name="twitter:image" content="/assets/touch-icon.png">
 
   <link rel="apple-touch-icon" href="/assets/touch-icon.png">
@@ -93,7 +93,7 @@
         
           
             
-              <a class="page-link" href="/resume/">Resume</a>
+              <a class="page-link" href="/resume">Resume</a>
             
           
         
@@ -128,12 +128,13 @@
            <img src="assets/joey_i3d.png" id="home-profile"/>
         </div>
         <div class="col-10 no-rpadding">
-            <p>I am Ph.D. student at the <a href="http://gfx.lab.mcgill.ca/">
+            <p class="justified">I am a Ph.D. student at the <a href="http://gfx.lab.mcgill.ca/">
               McGill Graphics &amp; Imaging Lab (GIL)</a>, working under
               <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>.
               My main research interests lie at the intersection of physically-based
-              rendering and machine learning. More precisely, I am interested in
-              applying deep learning techniques to light transport simulations.</p>
+              rendering and machine learning. More precisely, I am interested in applying deep learning techniques to improve current physically-based rendering algorithms (e.g., denoising, path guiding, sampling). 
+              I also have an interest for differentiable rendering and Markov chain Monte Carlo methods for light transport simulations.
+            </p>
 
             <p>If you'd like to chat, feel free to send me an <a href="mailto:joey.litalien@gmail.com">email</a>.</p>
         </div>
@@ -144,17 +145,88 @@
   <section>
     <h1>Latest News <span class="showmore"><a href="news">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
     <dl>
-    
-    
-    <dt class="newslist-date">2018.11.18</dt>
-    <dd>I will be presenting (with D. Rioux & N. Vibert) some of our early work on MCMC for rendering at MOTOGRAPH held at Université de Montréal.</dd>
-    
-    <dt class="newslist-date">2018.11.10</dt>
-    <dd>I will be starting my Ph.D. at McGill in January 2019.</dd>
-    
-    <dt class="newslist-date">2018.05.12</dt>
-    <dd>I will be attending <a href="http://i3dsymposium.github.io/2018/"> Interactive 3D Graphics and Games (i3D) 2018</a> held at Ubisoft Montréal.</dd>
-    
+      
+      
+        <dt class="newslist-date">2020.01.30</dt>
+        <dd>Our paper on applying delayed rejection to Metropolis light transport was accepted to TOG.</dd>
+      
+        <dt class="newslist-date">2019.12.01</dt>
+        <dd>I will be presenting some of my early research work at MOTOGRAPH 2019 held at UWaterloo.</dd>
+      
+        <dt class="newslist-date">2019.11.04</dt>
+        <dd>I will be interning as a research scientist at <a href="https://nv-tlabs.github.io/">NVIDIA AI</a> (<a href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>'s group) next summer in Toronto.</dd>
+      
+    </dl>
+  </section>
+
+  <section>
+    <h1>Recent Publications <span class="showmore"><a href="portfolio">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
+    <div class="container">
+      
+      
+      <div class="row bottom-padding">
+        <div class="col-2 no-padding">
+            <a href="/publications/drmlt">
+              <img class="project-thumb" src="/assets/thumbnails/drmlt-thumb.png"/
+            ></a>
+        </div>
+        <div class="col-10 no-rpadding">
+          <h3><a href="/publications/drmlt">Delayed Rejection Metropolis Light Transport</a></h3>
+          <p>
+            <!-- List of authors -->
+            
+               
+                
+                  Damien Rioux-Lavoie,
+                
+              
+            
+               
+                
+                  <b>Joey Litalien</b>, 
+                
+              
+            
+               
+                
+                  Adrien Gruson,
+                
+              
+            
+               
+                
+                  Toshiya Hachisuka,
+                
+              
+            
+              
+                and 
+                
+                  Derek Nowrouzezahrai
+                
+              
+            
+            <br>
+            <!-- Journal information -->
+            <i>
+              ACM Transactions on Graphics
+              
+                (To be presented at SIGGRAPH),
+              
+            </i> 
+            
+             2020
+          </p>
+          <ul class="fa-ul inline-list">
+            <li class="fa-li"><i class="fas fa-globe-americas"></i>
+              <a href="/publications/drmlt">Project page</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
   </section>
 
   <section>
@@ -162,99 +234,51 @@
     <div class="container">
       
       
-      
-      <div class="row bottom-padding">
-        <div class="col-5 no-padding">
-            <a href=""><img class="project-thumb" src="/assets/thumbnails/renderer-thumb.png"/></a>
-        </div>
-        <div class="col-7 no-rpadding">
-          <h2><a href="">Nenufar Renderer</a></h2>
-          <p>Work-in-progress physically-based renderer written in C++11 with a focus on state-of-the-art light transport algorithms and material models.</p>
-          <p>
-          
-          <a href="/projects/renderer">
-            <button>
+        
+        <div class="row bottom-padding">
+          <div class="col-2 no-padding">
+              <a href="https://github.com/joeylitalien/interactive-viewer"><img class="project-thumb" src="/assets/thumbnails/interactive-viewer-thumb.png"/></a>
+          </div>
+          <div class="col-10 no-rpadding">
+            <h3><a href="https://github.com/joeylitalien/interactive-viewer">Online Test Suite for Rendering Research</a></h3>
+            <p class="justified">A web comparison tool for rendering research written in Python+JS, based on the online test suite with interactive viewer by Disney Research. Useful for assembling supplementary material (comparison metrics, convergence plots, etc.)
+</p>
+            <ul class="fa-ul inline-list">
               
-                <i class="fas fa-globe-americas"></i>
               
-              Project Page
-            </button>
-          </a>
-          
-          
-          </p>
-        </div>
-      </div>
-      
-      
-      
-      <div class="row bottom-padding">
-        <div class="col-5 no-padding">
-            <a href=""><img class="project-thumb" src="../assets/thumbnails/n2n-thumb.png"/></a>
-        </div>
-        <div class="col-7 no-rpadding">
-          <h2><a href="">Implementing Noise2Noise</a></h2>
-          <p>PyTorch implementation of <i>Noise2Noise: Learning Image Restoration without Clean Data</i> by Lehtinen et al.</p>
-          <p>
-          
-          
-            <a href="https://github.com/joeylitalien/noise2noise-pytorch"><button><i class="fab fa-github"></i> GitHub</button></a>
-          
-          </p>
-        </div>
-      </div>
-      
-      
-      
-      <div class="row bottom-padding">
-        <div class="col-5 no-padding">
-            <a href=""><img class="project-thumb" src="../assets/thumbnails/l2hmc-thumb.png"/></a>
-        </div>
-        <div class="col-7 no-rpadding">
-          <h2><a href="">Reproducing L2HMC</a></h2>
-          <p>ICLR 2018 Reproducibility Challenge for <i>Generalizing Hamiltonian Monte Carlo with Neural Networks</i> by Lévy et al.</p>
-          <p>
-          
-          <a href="/assets/reports/l2hmc.pdf">
-            <button>
+              <li class="fa-li"><i class="fab fa-github"></i>
+                <a href="https://github.com/joeylitalien/interactive-viewer">Code repository (Git)</a>
+              </li>
               
-                <i class="far fa-file-pdf"></i>
-              
-              PDF Report
-            </button>
-          </a>
-          
-          
-            <a href="https://github.com/joeylitalien/l2hmc"><button><i class="fab fa-github"></i> GitHub</button></a>
-          
-          </p>
+            </ul>
+          </div>
         </div>
-      </div>
+        
       
+        
+        <div class="row bottom-padding">
+          <div class="col-2 no-padding">
+              <a href="https://github.com/joeylitalien/noise2noise-pytorch"><img class="project-thumb" src="../assets/thumbnails/n2n-thumb.png"/></a>
+          </div>
+          <div class="col-10 no-rpadding">
+            <h3><a href="https://github.com/joeylitalien/noise2noise-pytorch">Noise2Noise PyTorch Implementation</a></h3>
+            <p class="justified">Unofficial PyTorch implementation of <i>Noise2Noise: Learning Image Restoration without Clean Data</i> by Lehtinen et al., 2018
+</p>
+            <ul class="fa-ul inline-list">
+              
+              
+              <li class="fa-li"><i class="fab fa-github"></i>
+                <a href="https://github.com/joeylitalien/noise2noise-pytorch">Code repository (Git)</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        
       
   </section>
 
-  <!--
-  <h2>Recent posts</h2>
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">January 25, 2018  /
-          
-            <a href="rendering">rendering</a>
-          
-        </span>
-        <h2>
-          <a class="post-link" href="/rendering/2018/01/25/welcome.html">Welcome!</a>
-        </h2>
-      </li>
-    
-  </ul>
-  view more posts in the <a href="/archive">archive</a>-->
-
 </div>
-
       </div>
     </div>
 
@@ -303,7 +327,7 @@
           </li>
           
         </ul>
-        <span class="copyright">Copyright &copy; 2019 Joey Litalien</a>
+        <span class="copyright">Copyright &copy; 2020 Joey Litalien</a>
       </div>
 
       <!-- <div class="footer-col footer-col-3">

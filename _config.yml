@@ -1,6 +1,7 @@
 # Site settings
 title: Joey Litalien
 email: joey.litalien@gmail.com
+email_display: joey [dot] litalien [at] gmail [dot] com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://joeylitalien.github.io" # the base hostname & protocol for your site
@@ -13,6 +14,8 @@ spotify_username: 12162861472
 # Build settings
 markdown: kramdown
 collections:
+    publications:
+        output: true
     projects:
         output: true
     news:

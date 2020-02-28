@@ -7,8 +7,8 @@ order: 5
 ---
 
 ## Downtown Campus
-*McGill Graphics &amp; Imaging Laboratory*<br>
-McConnell Engineering Building, Room 538 <br>
+__McGill Graphics &amp; Imaging Laboratory__<br>
+Macdonald Engineering Building, Room 436 <br>
 3480 University Street<br>
 Montréal, QC H3A 0E9<br>
 Canada
