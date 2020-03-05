@@ -16,13 +16,15 @@ $base-line-height: 1.2;
 
 $spacing-unit:     30px;
 
-$blue:            #116AEC;
-$green:            #1BBC9B;
-$yellow:           #F7D77A;
+$blue:            #5333ed;
+$green:           #1BBC9B;
+$yellow:          #F7D77A;
+$purple:          #6a40fd;
+$red:             #ec644b;
 
 $text-color:        #222;
 $background-color:  #FFFFFF;
-$brand-color:       #1BBC9B;
+$brand-color:       $green;
 $brand-color-light: rgba(27,188,155, 0.1);
 $brand-color-lighter: rgba(27,188,155, 0.5);
 $brand-color-dark:  $brand-color;
@@ -151,6 +153,7 @@ figure figcaption {
   .wrapper {
     border-bottom: 1px solid #eee;
   }
+  /*background-color: $text-color;*/
 }
 
 .parallelogram {

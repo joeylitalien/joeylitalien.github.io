@@ -9,7 +9,7 @@ summary: Implementation of different generative adversarial networks in PyTorch 
 code:
     url: https://github.com/joeylitalien/celeba-gans
 report:
-    file: gans.pdf
+    file: /assets/pdfs/gans.pdf
     size: 7.5MB
 featured: -1
 ---
