@@ -51,18 +51,20 @@ layout: default
           <p>
             <!-- List of authors -->
             {% for a in p.authors %}
+              {% assign firstshort = a.author.name | slice: 0 %}
+              {% assign lastname = a.author.name | split: " " | last %}
               {% if forloop.last and forloop.length != 1 %}
                 and 
                 {% if a.author.name == "Joey Litalien" %}
-                  <b>{{ a.author.name }}</b>
+                  <b>{{ firstshort }}</b>
                 {% else %}
-                  {{ a.author.name }}
+                {{ firstshort }}. {{ lastname }}
                 {% endif %}
               {% else %} 
                 {% if a.author.name == "Joey Litalien" %}
-                  <b>{{ a.author.name }}</b>{% if forloop.length != 1 %}, {% endif %}
+                  <b>{{ firstshort }}. {{ lastname }}</b>{% if forloop.length != 1 %}, {% endif %}
                 {% else %}
-                  {{ a.author.name }},
+                  {{ firstshort }}. {{ lastname }},
                 {% endif %}
               {% endif %}
             {% endfor %}
