@@ -761,4 +761,12 @@ i.fa-xs {
     display: inline;
     padding-right: 6px; }
 
+.container {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: none !important; } }
+
 /*# sourceMappingURL=style.css.map */

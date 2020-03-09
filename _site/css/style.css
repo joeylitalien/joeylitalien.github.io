@@ -103,7 +103,7 @@ a {
  */
 blockquote {
   border-left: 2px solid #1BBC9B;
-  padding-left: 7.5px; }
+  padding-left: 15px; }
   blockquote > :last-child {
     margin-bottom: 0; }
 
@@ -760,5 +760,13 @@ i.fa-xs {
   .inline-list li {
     display: inline;
     padding-right: 6px; }
+
+.container {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: none !important; } }
 
 /*# sourceMappingURL=style.css.map */

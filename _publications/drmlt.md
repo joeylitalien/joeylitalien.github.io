@@ -8,7 +8,7 @@ authors:
     - author: 
         name: Damien Rioux-Lavoie
         institution: McGill University
-        link:
+        link: https://riouxld21.github.io/research
         order: 1
     - author: 
         name: Joey Litalien
