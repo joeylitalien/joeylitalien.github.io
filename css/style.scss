@@ -16,7 +16,7 @@ $base-line-height: 1.2;
 
 $spacing-unit:     30px;
 
-$blue:            #5333ed;
+$blue:            #0053d6;
 $green:           #1BBC9B;
 $yellow:          #F7D77A;
 $purple:          #6a40fd;
@@ -24,7 +24,7 @@ $red:             #ec644b;
 
 $text-color:        #222;
 $background-color:  #FFFFFF;
-$brand-color:       $green;
+$brand-color:       $blue;
 $brand-color-light: rgba(27,188,155, 0.1);
 $brand-color-lighter: rgba(27,188,155, 0.5);
 $brand-color-dark:  $brand-color;
@@ -307,5 +307,31 @@ i.fa-xs { margin: 0; }
 @media (min-width: 576px) {
   .container {
     max-width: none !important;
+  }
+}
+
+/* Experimental left nav bar */
+.left-header {
+  height: 100%;
+  width: 100px;
+}
+
+
+.left-nav {
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: inherit;
+  z-index: 35;
+
+  a {
+    padding: 8px 0px;
+    color: #fff !important;
   }
 }

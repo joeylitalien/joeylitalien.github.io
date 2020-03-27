@@ -5,13 +5,36 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Mar 2020 15:24:47 -0400</pubDate>
-    <lastBuildDate>Mon, 09 Mar 2020 15:24:47 -0400</lastBuildDate>
+    <pubDate>Thu, 19 Mar 2020 20:14:31 -0400</pubDate>
+    <lastBuildDate>Thu, 19 Mar 2020 20:14:31 -0400</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
         <title>Welcome!</title>
-        <description>&lt;p&gt;How did you get here?&lt;/p&gt;
+        <description>&lt;p&gt;Video&lt;sup id=&quot;fnref:video&quot;&gt;&lt;a href=&quot;#fn:video&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;display:none;&quot;&gt;&lt;sup id=&quot;fnref:test&quot;&gt;&lt;a href=&quot;#fn:test&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat non ipsum nec sollicitudin. Quisque lacus lacus, tincidunt in sem vitae, imperdiet venenatis turpis. Aliquam sagittis mollis mattis. Pellentesque eget aliquet quam. Phasellus mi erat, condimentum nec lacus id, lacinia pretium magna. Nullam a vestibulum turpis. Donec vitae arcu rutrum, placerat sem malesuada, venenatis libero. Praesent vehicula ante vitae sapien dapibus rutrum. Maecenas vitae sodales ligula. Mauris ullamcorper arcu condimentum quam dapibus molestie. Donec ullamcorper semper sapien, ac luctus est ultricies sed. Pellentesque laoreet at tellus a rutrum.&lt;/p&gt;
+
+&lt;p&gt;Praesent a sem nulla. Pellentesque feugiat tristique nibh non ornare. Donec a iaculis mi. Phasellus dignissim sodales sodales. Suspendisse porta purus et ultrices tempor. Sed id ex massa. Quisque aliquam velit at molestie ornare.&lt;/p&gt;
+
+&lt;p&gt;Vestibulum sed neque ornare risus pulvinar dictum. Morbi et euismod ex. Vivamus in ex vel tortor porta fringilla eget id ipsum. Nulla mattis felis eu lectus ultrices varius. Suspendisse venenatis enim sed leo condimentum feugiat. Aliquam viverra, tortor at dignissim condimentum, metus magna fringilla neque, sed consequat turpis erat sit amet justo. Suspendisse porta pharetra metus, at dapibus sapien blandit id. Nullam blandit ultrices ullamcorper. Suspendisse eget ligula ut enim varius varius ac sit amet libero. Donec gravida ultricies libero at tincidunt. Nullam eleifend est eget elit ornare, in condimentum risus varius. Vivamus orci leo, dictum at mattis a, gravida nec eros. Ut ultricies pellentesque neque quis bibendum. Aliquam lobortis tempus nisi sed tincidunt.&lt;/p&gt;
+
+&lt;p&gt;Aenean tincidunt magna ut aliquam efficitur. Quisque eu leo vel leo posuere ornare. Donec vitae eleifend odio. Aliquam efficitur dolor sit amet leo laoreet aliquet non ac ante. Morbi viverra ipsum id turpis sodales, vel dignissim augue placerat. Maecenas vel neque vitae dolor volutpat pulvinar. Donec porttitor tellus non auctor eleifend.&lt;/p&gt;
+
+&lt;p&gt;Cras ut eros efficitur, cursus magna ac, ullamcorper elit. Nunc imperdiet, ex sit amet imperdiet convallis, lorem nunc ornare ligula, sodales iaculis odio justo a nibh. Aliquam justo nibh, posuere et lectus vel, luctus tincidunt dolor. Fusce eu interdum magna. In hac habitasse platea dictumst. Proin aliquet vel ipsum ut posuere. Nunc pellentesque metus erat, sed feugiat ex ultricies in. Maecenas vitae ultricies elit. Sed consectetur rhoncus rutrum. Fusce bibendum vulputate elit, quis porta tortor finibus non. Nunc eget tristique libero, ac mattis arcu. Sed in est non arcu consectetur laoreet ac at lectus.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:video&quot;&gt;
+      &lt;p&gt;Ok &lt;a href=&quot;#fnref:video&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:test&quot;&gt;
+      &lt;p&gt;Okkok &lt;a href=&quot;#fnref:test&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 12:00:00 -0500</pubDate>
         <link>http://localhost:4000/rendering/2018/01/25/welcome.html</link>
