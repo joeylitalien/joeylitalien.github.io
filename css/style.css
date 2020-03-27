@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #0053d6;
+  color: #1BBC9B;
   text-decoration: none; }
   a:visited {
     /*color: darken($brand-color, 15%);*/ }
@@ -102,7 +102,7 @@ a {
  * Blockquotes
  */
 blockquote {
-  border-left: 2px solid #0053d6;
+  border-left: 2px solid #1BBC9B;
   padding-left: 15px; }
   blockquote > :last-child {
     margin-bottom: 0; }
@@ -115,7 +115,7 @@ code {
   font-size: 15px;
   border: 1px solid #EEF0FA;
   border-radius: 3px;
-  background-color: #d6e6ff;
+  background-color: #dcfaf4;
   font-family: "Inconsolata", monospace; }
 
 code {
@@ -172,7 +172,7 @@ hr {
   margin: 30px 0; }
 
 .category {
-  color: #0053d6; }
+  color: #1BBC9B; }
 
 #profile {
   float: right;
@@ -229,9 +229,9 @@ sup {
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
   .site-nav .page-link.active {
-    color: #0053d6 !important;
+    color: #1BBC9B !important;
     padding-bottom: 20px;
-    border-bottom: 2px solid #0053d6; }
+    border-bottom: 2px solid #1BBC9B; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
@@ -243,7 +243,7 @@ sup {
       text-align: right;
       z-index: 9999; }
       .site-nav .page-link.active {
-        color: #0053d6 !important;
+        color: #1BBC9B !important;
         padding: 5px 10px;
         border-bottom: none; }
       .site-nav .menu-icon {
@@ -625,8 +625,8 @@ button {
   margin-top: 4px; }
 
 button:hover {
-  color: #0053d6;
-  border-color: #0053d6;
+  color: #1BBC9B;
+  border-color: #1BBC9B;
   background-color: rgba(27, 188, 155, 0.1); }
 
 button:focus {
@@ -786,7 +786,7 @@ i.fa-xs {
   width: inherit;
   z-index: 35; }
   .left-nav a {
-    padding: 8px 16px;
+    padding: 8px 0px;
     color: #fff !important; }
 
 /*# sourceMappingURL=style.css.map */
