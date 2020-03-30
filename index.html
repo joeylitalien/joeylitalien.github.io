@@ -85,7 +85,7 @@ layout: default
             </li>
             {% if dl.published %}
               <li class="fa-li"><i class="far fa-file-pdf"></i>
-                <a href="{{ dl.paper.file }}">Paper ({{ dl.paper.size }} pdf)</a>
+                <a href="{{ dl.paper.file }}">Paper ({{ dl.paper.size }} .pdf)</a>
               </li>
               {% if dl.doi.url %}
               <li class="fa-li"><i class="fas fa-atlas"></i>
@@ -94,7 +94,7 @@ layout: default
               {% endif %}
               {% if dl.supplementary.file %}
               <li class="fa-li"><i class="far fa-file-archive"></i>
-                <a href="{{ dl.supplementary.url }}">Supplemental</a>
+                <a href="{{ dl.supplementary.url }}">Supplemental ({{ dl.supplementary.size }} .zip)</a>
               </li>
               {% endif %}
               {% if dl.code.url %}

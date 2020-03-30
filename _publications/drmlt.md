@@ -56,9 +56,9 @@ downloads:
     doi:
         url: #doi
     supplementary:
-        file: #DRMLT-Supplemental.zip
-        size: #350MB
-        url: #supplementary
+        file: http://beltegeuse.s3-website-ap-northeast-1.amazonaws.com/research/2020_DRMLT/drmlt-supplemental.zip
+        size: 185MB
+        url: http://beltegeuse.s3-website-ap-northeast-1.amazonaws.com/research/2020_DRMLT
     slides:
         file: #DRMLT-Presentation.pdf
         size: #30MB
