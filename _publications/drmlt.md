@@ -47,10 +47,10 @@ abstract: |
 acknowledgements: Computing resources were provided by the National Systems of Compute Canada. This research was partially funded by the Natural Sciences and Engineering Council of Canada (RGPIN-2018-05669) and the Japan Society for the Promotion of Science KAKENHI (18KK0309).
 
 downloads:
-    published: false
+    published: True
     paper:
-        file: #RiouxLavoie-2020-DRMLT.pdf
-        size: #25MB
+        file: /assets/pdfs/drmlt.pdf
+        size: 21.5MB
         file-lowres: #RiouxLavoie-2020-DRMLT-Lowres.pdf
         size-lowres: #3MB
     doi:
@@ -80,12 +80,12 @@ tex: |
     @article{Rioux-Lavoie:2020:DRMLT,
        author = {Rioux-Lavoie, Damien and Litalien, Joey and Gruson, Adrien and Hachisuka, Toshiya and Nowrouzezahrai, Derek},
        title = {Delayed Rejection {M}etropolis Light Transport},
-       journal = {ACM Transactions on Graphics (To be presented at SIGGRAPH 2020)},
+       journal = {ACM Transactions on Graphics},
        volume = {X},
        number = {XX},
        year = {2020},
-       month = jul,
-       doi = {XXX}
+       month = {XX},
+       doi = {10.1145/3388538}
     }
 
 tag: research

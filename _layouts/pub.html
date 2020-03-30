@@ -51,9 +51,9 @@ layout: default
     <p class="justified">{{ page.abstract }}</p>
 
     <!-- Download links -->
+    {% assign dl = page.downloads %}
     {% if dl.published %}
     <h1>Downloads</h1>
-    {% assign dl = page.downloads %}
     <p>
       <h3>Publication</h3>
       <ul class="fa-ul">
