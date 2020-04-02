@@ -60,7 +60,7 @@ layout: default
       <ul class="fa-ul">
         {% if dl.paper.file and dl.published %}
         <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
-          <a href="{{ dl.paper.file }}">Paper, PDF ({{ dl.paper.size}})</a>
+          <a href="{{ dl.paper.file }}">Paper (preprint), PDF ({{ dl.paper.size}})</a>
         </li>
         {% endif %}
         {% if dl.paper.file-lowres %}
@@ -155,7 +155,7 @@ layout: default
 
     <!-- Thanks -->
     {% if page.acknowledgements %}
-    <h1>Acknowledgements</h1>
+    <h1>Acknowledgments</h1>
     <p class="justified">
       {{ page.acknowledgements }}
     </p>
