@@ -806,4 +806,8 @@ i.fa-xs {
 .btn-clipboard:hover {
   color: #222; }
 
+.bibtex-box {
+  position: relative;
+  overflow-x: hidden; }
+
 /*# sourceMappingURL=style.css.map */

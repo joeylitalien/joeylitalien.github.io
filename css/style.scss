@@ -354,3 +354,8 @@ i.fa-xs { margin: 0; }
 .btn-clipboard:hover {
   color: $text-color;
 }
+
+.bibtex-box {
+  position: relative; 
+  overflow-x: hidden;
+}
