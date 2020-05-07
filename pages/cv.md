@@ -40,9 +40,12 @@ order: 3
 </div>
 
 # Publications & Projects
-See [Portfolio](/portfolio).
+<div class="container cv">
+See <a href="/portfolio">Portfolio</a>.
+</div>
 
 # Selected Awards
+<div class="container cv">
 {% include resume-item.html
       left="2019<br>2019<br>2019<br>2017/18"
       title="NSERC Postgraduate Scholarship – Doctoral Program (PGS D)<br>
@@ -53,40 +56,21 @@ See [Portfolio](/portfolio).
       subtitle=""
       description=""
 %}
-
-# Talks & Leadership
-<div class="container cv">
-{% include resume-item.html
-      left="2017/18/19"
-      title="MOTOGRAPH,"
-      subtitle="<i>a graphics research seminar</i>, Montréal/Toronto, QC, Canada"
-      description="Best presentation award (2017)"
-%}
-
-{% include resume-item.html
-      left="Aug 2017"
-      title="ACM SIGGRAPH Student Volunteer Program,"
-      subtitle="Los Angeles CA, USA"
-      description="Supported the conference by ensuring the smooth functioning of operations (technical paper sessions and main exhibitions)"
-%}
-
-{% include resume-item.html
-      left="Sep 2013<br> to Mar 2016"
-      title="Seminars in Undergraduate Mathematics in Montreal,"
-      subtitle="<i>a nonprofit student organization</i>"
-      description="<ul>
-        <li>Organized a weekend-long seminar where students (≈100) can share and discuss mathematical research</li>
-        <li>Lead Organizer in 2015, President in 2014, and VP Communications in 2013</li>
-      </ul>"
-%}
 </div>
 
-# Academic Experience
+# Academic & Research Experience
 <div class="container cv">
+{% include resume-item.html
+      left="May 2020<br>to Present"
+      title="Research Scientist Intern,"
+      subtitle="NVIDIA AI Labs, Toronto, ON, Canada (<i>Remote</i>)"
+      description="Topic: Computer Graphics + Deep Learning<br>Mentors: Sanja Fidler & Morgan McGuire"
+%}
+
 {% include resume-item.html
       left="Fall 2018/19"
       title="Teaching Assistant,"
-      subtitle="Departments of ECE, McGill University"
+      subtitle="Department of ECE, McGill University"
       description="ECSE 446/546: Realistic/Advanced Image Synthesis (<i>graduate and undergraduate</i>)"
 %}
 
@@ -104,6 +88,33 @@ See [Portfolio](/portfolio).
         <li>ECSE 689: Realistic Image Synthesis (<i>graduate</i>)</li>
         <li>ECSE 222: Digital Logic (<i>undergraduate</i>)</li>
         <li>MATH 235: Abstract Algebra I (<i>undergraduate</i>)</li>
+      </ul>"
+%}
+</div>
+
+# Talks & Leadership
+<div class="container cv">
+{% include resume-item.html
+      left="2017/18/19"
+      title="MOTOGRAPH,"
+      subtitle="<i>a graphics research seminar</i>, Montréal/Toronto, QC/ON, Canada"
+      description="Best presentation award (2017)"
+%}
+
+{% include resume-item.html
+      left="Aug 2017"
+      title="ACM SIGGRAPH Student Volunteer Program,"
+      subtitle="Los Angeles CA, USA"
+      description="Supported the conference by ensuring the smooth functioning of operations (technical paper sessions and main exhibitions)"
+%}
+
+{% include resume-item.html
+      left="Sep 2013<br> to Mar 2016"
+      title="Seminars in Undergraduate Mathematics in Montreal,"
+      subtitle="<i>a nonprofit student organization</i>"
+      description="<ul>
+        <li>Organized a weekend-long seminar where students (≈100) can share and discuss mathematical research</li>
+        <li>Lead Organizer in 2015, President in 2014, and VP Communications in 2013</li>
       </ul>"
 %}
 </div>

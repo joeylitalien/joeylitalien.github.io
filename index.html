@@ -97,7 +97,7 @@ layout: default
                 <a href="{{ dl.supplementary.url }}">Supplemental ({{ dl.supplementary.size }} .zip)</a>
               </li>
               {% endif %}
-              {% if dl.code.url %}
+              {% if dl.code.url and dl.code.published %}
               <li class="fa-li"><i class="fab fa-github"></i>
                 <a href="{{ dl.code.url }}">Code</a>
               </li>

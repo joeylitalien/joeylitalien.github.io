@@ -29,10 +29,12 @@ authors:
         link: http://www.cim.mcgill.ca/~derek/
 
 journal: ACM Transactions on Graphics
-journal-note: To be presented at SIGGRAPH
-volume: X
-number: XX
-month: XX
+journal-note: To be presented at <b>SIGGRAPH</b>
+volume: 39
+number: 3
+article-no: 26
+doi: 10.1145/3388538
+month: April
 year: 2020
 
 thumbnail: /assets/thumbnails/drmlt-thumb.png
@@ -42,14 +44,14 @@ teaser-caption: "We generalize the Metropolis–Hastings algorithm with delayed 
 abstract: |
     Designing robust mutation strategies for primary sample space Metropolis light transport is a challenging problem: poorly-tuned mutations both hinder state space exploration and introduce structured image artifacts. Scenes with complex materials, lighting and geometry make hand-designing strategies that remain optimal over the entire state space infeasible. Moreover, these difficult regions are often sparse in state space, and so relying exclusively on intricate—and often expensive—proposal mechanisms can be wasteful where simpler inexpensive mechanisms are more sample efficient. We generalize Metropolis–Hastings light transport to employ a flexible two-stage mutation strategy based on delayed rejection Markov chain Monte Carlo. Our approach generates multiple proposals based on the failure of previous ones, all while preserving Markov chain ergodicity. This allows us to reduce error while maintaining fast global exploration and low correlation across chains. Direct application of delayed rejection to light transport leads to low acceptance probabilities, and so we also propose a novel transition kernel to alleviate this issue. We benchmark our approach on several applications including <i>bold-then-timid</i> and <i>cheap-then-expensive</i> proposals across different light transport algorithms. Our method is applicable to any primary sample space algorithm with minimal implementation effort, producing consistently better results on a variety of challenging scenes.
 
-# video: https://www.youtube.com/embed/k3I17MNou7U
+# video: 
 
 acknowledgements: Computing resources were provided by the National Systems of Compute Canada. This research was partially funded by the Natural Sciences and Engineering Council of Canada (RGPIN-2018-05669) and the Japan Society for the Promotion of Science KAKENHI (18KK0309).
 
 downloads:
     published: True
     paper:
-        file: /assets/pdfs/drmlt.pdf
+        file: /assets/drmlt/drmlt.pdf
         size: 21.5MB
         file-lowres: #RiouxLavoie-2020-DRMLT-Lowres.pdf
         size-lowres: #3MB
@@ -69,22 +71,24 @@ downloads:
         size: #100MB
         url: #video
     code:
+        published: False
         file: #DRMLT-Code.zip
         size: #25MB
-        url: #https://github.com/joeylitalien/drmlt
+        url: https://github.com/joeylitalien/drmlt
     bibtex:
-        file: #DRMLT-BibTeX.bib
-        size: #1KB
+        file: /assets/drmlt/drmlt.bib
+        size: 0.4KB
 
 tex: |
     @article{Rioux-Lavoie:2020:DRMLT,
        author = {Rioux-Lavoie, Damien and Litalien, Joey and Gruson, Adrien and Hachisuka, Toshiya and Nowrouzezahrai, Derek},
        title = {Delayed Rejection {M}etropolis Light Transport},
        journal = {ACM Transactions on Graphics},
-       volume = {X},
-       number = {XX},
+       volume = {39},
+       number = {3},
+       articleno = {26},
        year = {2020},
-       month = {XX},
+       month = apr,
        doi = {10.1145/3388538}
     }
 

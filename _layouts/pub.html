@@ -33,7 +33,7 @@ layout: default
       {%- if page.journal-note -%}
         <i> ({{ page.journal-note }})</i>,
       {% else %},{% endif %}
-      {{ page.year }}</br>
+      {{ page.month }} {{ page.year }}</br>
       {% if page.authors.first.author.order == 1 %}
         *Authors with equal contribution
       {% endif %}
@@ -128,9 +128,13 @@ layout: default
         </li>
         {% endif %}
         {% if dl.code.url %}
-        <li><span class="fa-li"><i class="fab fa-github"></i></span>
-          <a href="{{ dl.code.url }}">Code repository (Git)</a>
-        </li>
+          <li><span class="fa-li"><i class="fab fa-github"></i></span>
+          {% if dl.code.published %}
+            <a href="{{ dl.code.url }}">Code repository (Git)</a>
+          {% else %}
+            Coming soon
+          </li>
+          {% endif %}
         {% endif %}
       </ul>
       {% endif %}
@@ -190,7 +194,7 @@ layout: default
         {% endif %}
       {% endfor %}
       {{ page.title }}. <i>{{ page.journal }}</i>, 
-      {{ page.volume }}({{ page.number }}), 
+      {{ page.volume }}({{ page.number }}), Article {{ page.article-no }},
       {{ page.month }} {{ page.year }}.
     </blockquote class="justified">
 
