@@ -7,6 +7,7 @@ layout: default
 <meta name="twitter:description" content="{{ page.abstract }}">
 <meta name="twitter:image" content="https://joeylitalien.github.io{{ page.teaser }}">
 
+
 <article class="post">
 
   <header class="post-header">
@@ -198,8 +199,10 @@ layout: default
       {{ page.month }} {{ page.year }}.
     </blockquote class="justified">
 
-    <pre><code>{{- page.tex -}}</code></pre>
-    
+  <div>
+    <pre style="position:relative"><code id="bibtex">{{- page.tex -}}</code><div class="btn-clipboard" id="clipboard-copy" data-clipboard-target="#bibtex" data-text-swap="Copied!"><i class="far fa-copy"></i> Copy to clipboard</div></pre>
+  </div>
+
     {% endif %}
 
     <!-- Other content -->
@@ -207,3 +210,27 @@ layout: default
   </div>
 
 </article>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(".btn-clipboard").on("click", function() {
+    var el = $(this);
+    if (el.text() == el.data("text-swap")) {
+      el.text(el.data("text-original")); 
+    } else {
+      el.empty();
+      el.append('<i class="fas fa-check"></i> ' + el.data("text-swap")); 
+      el.text(el.data("text-original")).delay(1);
+    }
+  });
+
+  var clipboard = new ClipboardJS('#clipboard-copy');
+
+  clipboard.on('success', function(e) {
+    console.log(e);
+  });
+
+  clipboard.on('error', function(e) {
+    console.log(e);
+  });
+</script>

@@ -316,7 +316,6 @@ i.fa-xs { margin: 0; }
   width: 100px;
 }
 
-
 .left-nav {
   background-color: $blue;
   display: flex;
@@ -334,4 +333,24 @@ i.fa-xs { margin: 0; }
     padding: 8px 0px;
     color: #fff !important;
   }
+}
+
+/* Copy to clipboard button */
+.btn-clipboard {
+  position: absolute; 
+  right: 0;
+  bottom: 0;
+  padding: 4px 8px;
+  font-size: 13px;
+  /* background-color: $brand-color; */
+  font-family: $base-font-family;
+
+  font-weight: 400;
+  font-size: 13px;
+  color: $brand-color;
+  cursor: pointer;
+}
+
+.btn-clipboard:hover {
+  color: $text-color;
 }
