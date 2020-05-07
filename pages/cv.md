@@ -58,7 +58,7 @@ See <a href="/portfolio">Portfolio</a>.
 %}
 </div>
 
-# Academic & Research Experience
+# Research & Academic Experience
 <div class="container cv">
 {% include resume-item.html
       left="May 2020<br>to Present"
