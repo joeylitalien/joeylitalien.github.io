@@ -56,7 +56,7 @@ downloads:
         file-lowres: #RiouxLavoie-2020-DRMLT-Lowres.pdf
         size-lowres: #3MB
     doi:
-        url: #doi
+        url: https://dl.acm.org/doi/abs/10.1145/3388538
     supplementary:
         file: http://beltegeuse.s3-website-ap-northeast-1.amazonaws.com/research/2020_DRMLT/drmlt-supplemental.zip
         size: 185MB
@@ -81,15 +81,14 @@ downloads:
 
 tex: |
     @article{Rioux-Lavoie:2020:DRMLT,
-       author = {Rioux-Lavoie, Damien and Litalien, Joey and Gruson, Adrien and Hachisuka, Toshiya and Nowrouzezahrai, Derek},
-       title = {Delayed Rejection {M}etropolis Light Transport},
-       journal = {ACM Transactions on Graphics},
-       volume = {39},
-       number = {3},
-       articleno = {26},
-       year = {2020},
-       month = apr,
-       doi = {10.1145/3388538}
+        author = {Rioux-Lavoie, Damien and Litalien, Joey and Gruson, Adrien and Hachisuka, Toshiya and Nowrouzezahrai, Derek},
+        title = {Delayed Rejection {Metropolis} Light Transport},
+        journal = {ACM Transactions on Graphics},
+        volume = {39},
+        number = {3},
+        year = {2020},
+        month = apr,
+        doi = {10.1145/3388538},
     }
 
 tag: research

@@ -1,17 +1,27 @@
+- date: 2020.05.04
+  news: I have started my internship at NVIDIA remotely due to COVID-19. Let's do this!
+
 - date: 2020.01.30
-  news: Our paper on applying delayed rejection to Metropolis light transport was accepted to ACM TOG.
+  news: Our <a href="publications/drmlt">paper</a> on applying delayed rejection to Metropolis light transport was accepted to ACM TOG.
 
 - date: 2019.12.01
-  news: I will be presenting some of my early research work at MOTOGRAPH 2019 held at UWaterloo.
+  news: I will be presenting some of my early research work at <a href="https://cs.uwaterloo.ca/~c2batty/MOTOGRAPH19/">MOTOGRAPH 2019</a> held at UWaterloo.
 
 - date: 2019.11.04
-  news: I will be interning as a research scientist at <a href="https://nv-tlabs.github.io/">NVIDIA AI</a> (<a href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>'s group) next summer in Toronto.
+  news: I will be interning as a research scientist at <a href="https://nv-tlabs.github.io/">NVIDIA AI</a> next summer in Toronto.
+
+- date: 2019.05.20
+  news: I will be attending <a href="http://i3dsymposium.github.io/2019/">
+    Interactive 3D Graphics and Games (i3D) 2019</a> held at Unity Technologies Montréal.
 
 - date: 2018.11.18
   news: I will be presenting (with D. Rioux-Lavoie & N. Vibert) some of our early work on MCMC for rendering at MOTOGRAPH held at Université de Montréal.
 
-- date: 2018.11.10
-  news: I will be starting my Ph.D. at McGill in January 2019. 
+- date: 2019.01.05
+  news: I am starting my Ph.D. at McGill!
+
+- date: 2018.12.15
+  news: I am done with my master's degree, it was fun! My journey into research has just begun...
 
 - date: 2018.05.12
   news: I will be attending <a href="http://i3dsymposium.github.io/2018/">

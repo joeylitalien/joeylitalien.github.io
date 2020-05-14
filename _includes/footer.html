@@ -6,6 +6,13 @@
       <div class="footer-col">
          <a class="mono" href="mailto:{{site.email}}">{{site.email}}</a>
         <ul class="contact-list">
+          {% if site.googlescholar_username %}
+          <li>
+            <a href="https://scholar.google.ca/citations?user={{site.googlescholar_username}}&hl=en">
+              <i class="fab fa-google"></i>
+            </a>
+          </li>
+          {% endif %}
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}">

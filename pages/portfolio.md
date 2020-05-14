@@ -63,10 +63,10 @@ order: 2
             {% endif %}
             {% if dl.supplementary.file %}
             <li class="fa-li"><i class="far fa-file-archive"></i>
-              <a href="{{ dl.supplementary.url }}">Supplemental</a>
+              <a href="{{ dl.supplementary.url }}">Supp. ({{ dl.supplementary.size }} .zip)</a>
             </li>
             {% endif %}
-            {% if dl.code.url %}
+            {% if dl.code.url and dl.code.published %}
             <li class="fa-li"><i class="fab fa-github"></i>
               <a href="{{ dl.code.url }}">Code</a>
             </li>
@@ -99,7 +99,7 @@ order: 2
           {% endif %}
           {% if p.code.url %}
           <li class="fa-li"><i class="fab fa-github"></i>
-            <a href="{{ p.code.url }}">Code repository (Git)</a>
+            <a href="{{ p.code.url }}">Code (Git)</a>
           </li>
           {% endif %}
         </ul>

@@ -10,12 +10,15 @@ layout: default
            <img src="assets/joey_i3d.png" id="home-profile"/>
         </div>
         <div class="col-10 no-rpadding">
-            <p class="justified">I am a Ph.D. student at the <a href="http://gfx.lab.mcgill.ca/">
-              McGill Graphics &amp; Imaging Lab (GIL)</a>, working under
-              <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>.
+            <p class="justified">I am a Ph.D. candidate at the <a href="http://gfx.lab.mcgill.ca/">
+              McGill Graphics Lab (MGL)</a>, working under
+              <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>. 
+              I am currently interning at <a href="https://www.nvidia.com/en-us/research/">NVIDIA AI</a> as a Research Scientist in Deep Learning, where I have joined <a href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>'s group for the summer.
+            </p>
+            <p>
               My main research interests lie at the intersection of physically-based
-              rendering and machine learning. More precisely, I am interested in applying deep learning techniques to improve current physically-based rendering algorithms (e.g., denoising, path guiding, sampling). 
-              I also have an interest for differentiable rendering and Markov chain Monte Carlo methods for light transport simulations.
+              rendering and machine learning. More precisely, I am interested in applying deep learning techniques to improve current rendering algorithms (e.g., denoising, path guiding, sampling). 
+              I also have an interest for differentiable rendering, 3D representation learning and Markov chain Monte Carlo (MCMC) methods for light transport simulations.
             </p>
 
             <p>If you'd like to chat, feel free to send me an <a href="mailto:{{site.email}}">email</a>.</p>
@@ -94,7 +97,7 @@ layout: default
               {% endif %}
               {% if dl.supplementary.file %}
               <li class="fa-li"><i class="far fa-file-archive"></i>
-                <a href="{{ dl.supplementary.url }}">Supplemental ({{ dl.supplementary.size }} .zip)</a>
+                <a href="{{ dl.supplementary.url }}">Supp. ({{ dl.supplementary.size }} .zip)</a>
               </li>
               {% endif %}
               {% if dl.code.url and dl.code.published %}
@@ -131,7 +134,7 @@ layout: default
               {% endif %}
               {% if p.code.url %}
               <li class="fa-li"><i class="fab fa-github"></i>
-                <a href="{{ p.code.url }}">Code repository (Git)</a>
+                <a href="{{ p.code.url }}">Code (Git)</a>
               </li>
               {% endif %}
             </ul>

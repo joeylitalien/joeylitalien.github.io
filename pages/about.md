@@ -7,7 +7,7 @@ order: 4
 ---
 
 <div id="profile"></div>
-I am a Ph.D. candidate at [McGill University][mcgill] where I am part of the [Graphics &amp; Imaging Lab (GIL)][gil]. I got my B.Sc. from the same university in [Honours Mathematics and Computer Science][math-cs] in 2015 and my M.Eng. in Graphics in 2018. During my undergrad, I helped organizing the [Seminars in Undergraduate Mathematics in Montreal (SUMM)][summ] for three years to promote pure and applied mathematical research in the city.
+I am a Ph.D. candidate at [McGill University][mcgill] where I am part of the [McGill Graphics Lab (MGL)][mgl]. I got my B.Sc. from the same university in [Honours Mathematics and Computer Science][math-cs] in 2015 and my M.Eng. in Graphics in 2018. During my undergrad, I helped organizing the [Seminars in Undergraduate Mathematics in Montreal (SUMM)][summ] for three years to promote pure and applied mathematical research in the city.
 
 I appreciate aesthetics, minimalism, and design of all kinds. Music-wise I enjoy house and techno, and sometimes I even [DJ](../assets/joey_dj.jpg). I've also been a [soccer referee](http://www.federation-soccer.qc.ca/) for more than ten years. Above all, I love problem solving and discovering new algorithms related to rendering, both physically-based and real-time.
 
@@ -24,5 +24,5 @@ For the typography enthusiasts, font is [San Francisco](https://developer.apple.
 [incol]: https://fonts.google.com/specimen/Inconsolata
 [jekyll]: https://jekyllrb.com/
 [typekit]: https://typekit.com/
-[gil]: http://gfx.lab.mcgill.ca/
+[mgl]: http://gfx.lab.mcgill.ca/
 [summ]: http://summ.math.uqam.ca/?lang=en
