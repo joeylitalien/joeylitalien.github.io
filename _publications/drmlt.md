@@ -34,7 +34,7 @@ volume: 39
 number: 3
 article-no: 26
 doi: 10.1145/3388538
-month: April
+month: May
 year: 2020
 
 thumbnail: /assets/thumbnails/drmlt-thumb.png
