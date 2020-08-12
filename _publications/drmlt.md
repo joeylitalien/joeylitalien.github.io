@@ -71,7 +71,7 @@ downloads:
         size: #100MB
         url: #video
     code:
-        published: False
+        published: True
         file: #DRMLT-Code.zip
         size: #25MB
         url: https://github.com/joeylitalien/drmlt
@@ -87,7 +87,7 @@ tex: |
         volume = {39},
         number = {3},
         year = {2020},
-        month = apr,
+        month = may,
         doi = {10.1145/3388538},
     }
 
