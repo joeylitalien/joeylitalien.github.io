@@ -105,7 +105,7 @@ layout: default
         {% endif %}
       </ul>
       {% endif %}
-      {% if dl.video.file or dl.video.url %}
+      {% if dl.video.file %}
       <h3>Video</h3>
       <ul class="fa-ul">
         {% if dl.video.file %}
@@ -113,11 +113,11 @@ layout: default
           <a href="{{ dl.video.file }}">Video (full-quality), MP4 ({{ dl.video.size }})</a>
         </li>
         {% endif %}
-        {% if dl.video.url %}
+        <!-- {% if dl.video.url %}
         <li><span class="fa-li"><i class="far fa-play-circle"></i></span>
           <a href="{{ dl.video.url }}">Video (Youtube)</a>
         </li>
-        {% endif %}
+        {% endif %} -->
       </ul>
       {% endif %}
       {% if dl.code.file or dl.code.url %}
@@ -151,10 +151,10 @@ layout: default
     {% endif %}
 
     <!-- Video embedding -->
-    {% if page.video %}
+    {% if dl.video.url %}
     <h1>Video</h1>
     <div class="video-container">
-      <iframe frameborder="0" class="video" src="{{ page.video }}"></iframe>
+      <iframe frameborder="0" class="video" src="{{ dl.video.url }}"></iframe>
     </div>
     {% endif %}
 

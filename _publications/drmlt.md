@@ -69,7 +69,7 @@ downloads:
     video:
         file: #DRMLT-Video.mp4
         size: #100MB
-        url: #video
+        url: https://www.youtube.com/embed/m22d-cTcubc
     code:
         published: True
         file: #DRMLT-Code.zip
