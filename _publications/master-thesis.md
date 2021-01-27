@@ -3,6 +3,7 @@ layout: pub
 
 short-title: LVRS
 title: Learning Visibility in Ray Space
+format-title: Learning Visibility in Ray Space
 authors:
     - author: 
         name: Joey Litalien

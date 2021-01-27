@@ -9,13 +9,19 @@ order: 2
 # Publications
 <section>
   <div class="container">
-    {% assign pubs = site.publications %}
-    {% for p in pubs limit:2 %}
+    {% assign pubs = site.publications | sort: 'featured' %}
+    {% for p in pubs limit:3  %}
     <div class="row bottom-padding">
       <div class="col-2 no-padding">
+      {% if p.thumbnail-video %}
         <a href="{{ p.permalink }}">
-          <img class="project-thumb" src="{{ p.thumbnail }}">
+        <video style="width: 100%; margin-top: 20px; margin-bottom: 20px;" autoplay muted loop>
+          <source src="{{ p.thumbnail-video }}" type="video/mp4">
+        </video>
         </a>
+      {% else %}
+        <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+      {% endif %}
       </div>
       <div class="col-10 no-rpadding">
         <h3><a href="{{ p.permalink }}">{{ p.title }}</a></h3>
@@ -85,9 +91,17 @@ order: 2
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for p in projects limit:4%}
     <div class="row bottom-padding">
-      <div class="col-2 no-padding">
-        <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
-      </div>
+        <div class="col-2 no-padding">
+        {% if p.thumbnail-video %}
+          <a href="{{ p.permalink }}">
+          <video style="width: 100%; margin-top: 20px; margin-bottom: 20px;" autoplay muted loop>
+            <source src="{{ p.thumbnail-video }}" type="video/mp4">
+          </video>
+          </a>
+        {% else %}
+          <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+        {% endif %}
+        </div>
       <div class="col-10 no-rpadding">
         <h3><a href="{{ p.permalink }}">{{ p.short-title }}</a></h3>
         <p class="justified">{{ p.summary }}</p>

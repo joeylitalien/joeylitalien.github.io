@@ -12,7 +12,7 @@ layout: default
 
   <header class="post-header">
     <!-- Paper title -->
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title">{{ page.format-title }}</h1>
 
     <!-- Authors -->
     <ul class="authors">
@@ -69,9 +69,19 @@ layout: default
           <a href="{{ dl.paper.file-low }}">Paper (low-quality), PDF ({{ dl.paper.size-lowres}})</a>
         </li>
         {% endif %}
+        {% if dl.arxiv.url %}
+        <li><span class="fa-li"><i class="fas fa-atlas"></i></span>
+          <a href="{{ dl.arxiv.url }}">arXiv version</a> &ndash; external link
+        </li>
+        {% endif %}
         {% if dl.doi.url %}
         <li><span class="fa-li"><i class="fas fa-atlas"></i></span>
           <a href="{{ dl.doi.url }}">Publisher's official version</a> &ndash; external link, may require a subscription
+        </li>
+        {% endif %}
+        {% if dl.main.url %}
+        <li><span class="fa-li"><i class="fas fa-star"></i></span>
+          <a href="{{ dl.main.url }}">Primary website</a> &ndash; external link
         </li>
         {% endif %}
       </ul>

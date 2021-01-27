@@ -45,9 +45,15 @@ layout: default
       {% for p in pubs limit:1 %}
       <div class="row bottom-padding">
         <div class="col-2 no-padding">
-            <a href="{{ p.permalink }}">
-              <img class="project-thumb" src="{{ p.thumbnail }}"/
-            ></a>
+        {% if p.thumbnail-video %}
+          <a href="{{ p.permalink }}">
+          <video style="width: 100%; margin-top: 20px; margin-bottom: 20px;" autoplay muted loop>
+            <source src="{{ p.thumbnail-video }}" type="video/mp4">
+          </video>
+          </a>
+        {% else %}
+          <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+        {% endif %}
         </div>
         <div class="col-10 no-rpadding">
           <h3><a href="{{ p.permalink }}">{{ p.title }}</a></h3>
@@ -120,9 +126,15 @@ layout: default
       {% for p in projects limit:2 %}
         {% if p.featured > 0 %}
         <div class="row bottom-padding">
+          {% if p.thumbnail-video %}
           <div class="col-2 no-padding">
-              <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+              <a href="{{ p.permalink }}"><video class="project-thumb" src="{{ p.thumbnail-video }}" autoplay muted loop/></a>
           </div>
+          {% else %}
+          <div class="col-2 no-padding">
+            <a href="{{ p.permalink }}"><img class="project-thumb" src="{{ p.thumbnail }}"/></a>
+          </div>
+          {% endif %}
           <div class="col-10 no-rpadding">
             <h3><a href="{{ p.permalink }}">{{ p.short-title }}</a></h3>
             <p class="justified">{{ p.summary }}</p>

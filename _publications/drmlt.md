@@ -3,6 +3,7 @@ layout: pub
 
 short-title: DRMLT
 title: Delayed Rejection Metropolis Light Transport
+format-title: Delayed Rejection Metropolis Light Transport
 summary: Applying delayed rejection MCMC to light transport simulation
 authors:
     - author: 
@@ -93,5 +94,5 @@ tex: |
 
 tag: research
 permalink: /publications/drmlt
-featured: 1
+featured: 2
 ---
