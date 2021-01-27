@@ -9,7 +9,7 @@ authors:
     - author: 
         name: Towaki Takikawa
         institution: NVIDIA & University of Toronto
-        link: https://riouxld21.github.io/research
+        link: https://tovacinni.github.io/
         order: 1
     - author: 
         name: Joey Litalien
