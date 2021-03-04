@@ -45,8 +45,8 @@ authors:
         institution: NVIDIA, University of Toronto & Vector Institute
         link: https://www.cs.toronto.edu/~fidler/
 
-journal: arXiv pre-print (cs.CV)
-journal-note: In submission
+journal: Computer Vision and Pattern Recognition
+journal-note: CVPR
 volume: 1
 number: 1
 article-no: 1
