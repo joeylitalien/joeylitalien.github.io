@@ -2,8 +2,8 @@
 layout: pub
 
 short-title: NGLOD
-title: "Neural Geometric Level of Detail: Real-time Rendering with Implicit 3D Surfaces"
-format-title: "Neural Geometric Level of Detail:<br>Real-time Rendering with Implicit 3D Surfaces"
+title: "Neural Geometric Level of Detail: Real-time Rendering with Implicit 3D Shapes"
+format-title: "Neural Geometric Level of Detail:<br>Real-time Rendering with Implicit 3D Shapes"
 summary: Neural SDFs, but real-time
 authors:
     - author: 
