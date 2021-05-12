@@ -130,7 +130,7 @@ tex: |
                   Morgan McGuire and 
                   Sanja Fidler},
         year = {2021},
-        journal = {arXiv preprint arXiv:2101.10994}
+        journal = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
     }
 
 tag: research
