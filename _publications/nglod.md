@@ -105,8 +105,11 @@ downloads:
         file: #
         size: #
         url: #
+    talk-video:
+        url: https://www.youtube.com/watch?v=Pi7W6XrFtMs
+        venue: Toronto Geometry Colloquium
     code:
-        published: False
+        published: True
         file: #
         size: #
         url: https://github.com/nv-tlabs/nglod
