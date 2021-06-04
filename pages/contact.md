@@ -14,5 +14,5 @@ Montréal, QC H3A 0E9<br>
 Canada
 
 <div class="alert">
-  Due to COVID-19 and my internship at NVIDIA, I am not on campus until October. Please reach me by email.
+  Due to COVID-19 and my internship at FRL, I am not on campus until end of 2021. Please reach me by email.
 </div>

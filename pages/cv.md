@@ -47,8 +47,9 @@ See <a href="/portfolio">Portfolio</a>.
 # Selected Awards
 <div class="container cv">
 {% include resume-item.html
-      left="2019<br>2019<br>2019<br>2017/18"
-      title="NSERC Postgraduate Scholarship – Doctoral Program (PGS D)<br>
+      left="2021<br>2019<br>2019<br>2019<br>2017/18"
+      title="Facebook Fellowship Award (AR/VR Computer Graphics) Finalist<br>
+             NSERC Postgraduate Scholarship – Doctoral Program (PGS D)<br>
              McGill Engineering Doctorate Award<br>
              Hydro-Québec Doctoral Fellowship in Engineering<br>
              Graduate Excellence Fellowship Awards
@@ -61,10 +62,17 @@ See <a href="/portfolio">Portfolio</a>.
 # Research & Academic Experience
 <div class="container cv">
 {% include resume-item.html
-      left="May 2020<br>to Present"
-      title="Research Scientist Intern,"
+      left="June 2021<br>to Present"
+      title="Research Intern,"
+      subtitle="Facebook Reality Labs (FRL) Research, Redmond, WA, USA (<i>Remote</i>)"
+      description="Mentors: Feng Liu & Lei Xiao"
+%}
+
+{% include resume-item.html
+      left="May 2020<br>to April 2021"
+      title="Research Intern,"
       subtitle="NVIDIA AI Labs, Toronto, ON, Canada (<i>Remote</i>)"
-      description="Topic: Computer Graphics + Deep Learning<br>Mentors: Sanja Fidler & Morgan McGuire"
+      description="Mentors: Sanja Fidler & Morgan McGuire"
 %}
 
 {% include resume-item.html
@@ -113,7 +121,7 @@ See <a href="/portfolio">Portfolio</a>.
       title="Seminars in Undergraduate Mathematics in Montreal,"
       subtitle="<i>a nonprofit student organization</i>"
       description="<ul>
-        <li>Organized a weekend-long seminar where students (≈100) can share and discuss mathematical research</li>
+        <li>Organized a weekend-long seminar where students can share their mathematical research</li>
         <li>Lead Organizer in 2015, President in 2014, and VP Communications in 2013</li>
       </ul>"
 %}
