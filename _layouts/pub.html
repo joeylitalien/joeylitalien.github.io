@@ -18,10 +18,10 @@ layout: default
     <ul class="authors">
       {% for a in page.authors %}
       <li>
-        {% if a.author.link %} 
+        {% if a.author.link %}
           <a href="{{ a.author.link }}">{{ a.author.name }}</a>
           {%- if a.author.order == 1 -%}*{%- endif -%},
-        {% else %} 
+        {% else %}
           {{ a.author.name }}{%- if a.author.order == 1 -%}*{%- endif -%},
         {% endif %} {{ a.author.institution }}
       </li>
@@ -29,11 +29,14 @@ layout: default
     </ul>
 
     <!-- Journal/conference title -->
-    <p>In 
+    <p>In
       <i>{{ page.journal }}</i>
       {%- if page.journal-note -%}
-        <i> ({{ page.journal-note }})</i>,
-      {% else %},{% endif %}
+        <i> ({{ page.journal-note }})</i>
+      {%- endif -%}
+      {%- if page.spotlight-note -%}
+        , <b>{{ page.spotlight-note }}</b>
+      {%- endif -%},
       {{ page.month }} {{ page.year }}</br>
       {% if page.authors.first.author.order == 1 %}
         *Authors with equal contribution
@@ -188,28 +191,28 @@ layout: default
       {% for a in page.authors %}
         {% if forloop.last %}
           {% if forloop.length != 1 %}
-            and 
-            {% if a.author.link %} 
+            and
+            {% if a.author.link %}
               <a href="{{ a.author.link }}">{{ a.author.name }}</a>.
             {% else %}
               {{ a.author.name }}.
             {% endif %}
           {% else %}
-            {% if a.author.link %} 
+            {% if a.author.link %}
               <a href="{{ a.author.link }}">{{ a.author.name }}</a>.
             {% else %}
               {{ a.author.name }}.
             {% endif %}
           {% endif %}
-        {% else %} 
-          {% if a.author.link %} 
-            <a href="{{ a.author.link }}">{{ a.author.name }}</a>, 
+        {% else %}
+          {% if a.author.link %}
+            <a href="{{ a.author.link }}">{{ a.author.name }}</a>,
           {% else %}
             {{ a.author.name }},
           {% endif %}
         {% endif %}
       {% endfor %}
-      {{ page.title }}. <i>{{ page.journal }}</i>, 
+      {{ page.title }}. <i>{{ page.journal }}</i>,
       {{ page.volume }}({{ page.number }}), Article {{ page.article-no }},
       {{ page.month }} {{ page.year }}.
     </blockquote class="justified">
@@ -231,10 +234,10 @@ layout: default
   $(".btn-clipboard").on("click", function() {
     var el = $(this);
     if (el.text() == el.data("text-swap")) {
-      el.text(el.data("text-original")); 
+      el.text(el.data("text-original"));
     } else {
       el.empty();
-      el.append('<i class="fas fa-check"></i> ' + el.data("text-swap")); 
+      el.append('<i class="fas fa-check"></i> ' + el.data("text-swap"));
       el.text(el.data("text-original")).delay(1);
     }
   });

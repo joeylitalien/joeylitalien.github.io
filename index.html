@@ -12,13 +12,13 @@ layout: default
         <div class="col-10 no-rpadding">
             <p class="justified">I am a Ph.D. candidate at the <a href="http://gfx.lab.mcgill.ca/">
               McGill Graphics Lab (MGL)</a>, where I am advised by
-              <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>. 
+              <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>.
               I am currently an intern at <a href="https://research.fb.com/category/augmented-reality-virtual-reality/">Facebook Reality Labs (FRL) Research.</a>
               From May 2020 to April 2021, I was a research intern at <a href="https://www.nvidia.com/en-us/research/">NVIDIA</a>, working in <a href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>'s AI group.
             </p>
             <p class="justified">
-              My main research interests lie at the intersection of 
-              realistic image synthesis and machine learning, where I focus on designing efficient and practical algorithms for solving forward and inverse rendering problems. 
+              My main research interests lie at the intersection of
+              realistic image synthesis and machine learning, where I focus on designing efficient and practical algorithms for solving forward and inverse rendering problems.
               In particular, I am interested in differentiable rendering, 3D representation learning and neural signed distance fields (SDFs). I also have an interest for high-dimensional sampling and Monte Carlo denoising.
             </p>
 
@@ -40,7 +40,7 @@ layout: default
   </section>
 
   <section>
-    <h1>Recent Publications <span class="showmore"><a href="portfolio">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
+    <h1>Recent Publications <span class="showmore"><a href="publications">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
     <div class="container">
       {% assign pubs = site.publications | sort: 'featured' %}
       {% for p in pubs limit:1 %}
@@ -64,13 +64,13 @@ layout: default
               {% assign firstshort = a.author.name | slice: 0 %}
               {% assign lastname = a.author.name | split: " " | last %}
               {% if forloop.last and forloop.length != 1 %}
-                and 
+                and
                 {% if a.author.name == "Joey Litalien" %}
                   <b>{{ firstshort }}</b>
                 {% else %}
                 {{ firstshort }}. {{ lastname }}
                 {% endif %}
-              {% else %} 
+              {% else %}
                 {% if a.author.name == "Joey Litalien" %}
                   <b>{{ firstshort }}. {{ lastname }}</b>{% if forloop.length != 1 %}, {% endif %}
                 {% else %}
@@ -85,7 +85,7 @@ layout: default
               {% if p.journal-note %}
                 ({{ p.journal-note }}),
               {% endif %}
-            </i> 
+            </i>
             {% assign dl = p.downloads %}
             {% if dl.published %} {{ p.month }} {% endif %} {{ p.year }}
           </p>
@@ -121,7 +121,7 @@ layout: default
   </section>
 
   <section>
-    <h1>Selected Projects <span class="showmore"><a href="portfolio">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
+    <h1>Selected Projects <span class="showmore"><a href="publications">(See more <i class="fas fa-arrow-right fa-xs"></i>)</a></span></h1>
     <div class="container">
       {% assign projects = site.projects | sort: 'featured' | reverse %}
       {% for p in projects limit:2 %}

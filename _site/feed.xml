@@ -3,19 +3,19 @@
   <channel>
     <title>Joey Litalien</title>
     <description></description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Jun 2021 23:45:03 -0400</pubDate>
-    <lastBuildDate>Thu, 03 Jun 2021 23:45:03 -0400</lastBuildDate>
-    <generator>Jekyll v4.0.0</generator>
+    <link>http://joeylitalien.github.io/</link>
+    <atom:link href="http://joeylitalien.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 30 Aug 2021 12:17:09 -0400</pubDate>
+    <lastBuildDate>Mon, 30 Aug 2021 12:17:09 -0400</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>Welcome!</title>
         <description>&lt;p&gt;How did you get here?&lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Jan 2018 12:00:00 -0500</pubDate>
-        <link>http://localhost:4000/rendering/2018/01/25/welcome.html</link>
-        <guid isPermaLink="true">http://localhost:4000/rendering/2018/01/25/welcome.html</guid>
+        <link>http://joeylitalien.github.io/rendering/2018/01/25/welcome.html</link>
+        <guid isPermaLink="true">http://joeylitalien.github.io/rendering/2018/01/25/welcome.html</guid>
         
         
         <category>rendering</category>

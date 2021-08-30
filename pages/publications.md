@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Portfolio
+title: Publications
 icon: <i class="far fa-clipboard"></i>
-permalink: /portfolio/
+permalink: /publications/
 order: 2
 ---
 
@@ -29,13 +29,13 @@ order: 2
           <!-- List of authors -->
           {% for a in p.authors %}
             {% if forloop.last and forloop.length != 1 %}
-              and 
+              and
               {% if a.author.name == "Joey Litalien" %}
                 <b>{{ a.author.name }}</b>
               {% else %}
                 {{ a.author.name }}
               {% endif %}
-            {% else %} 
+            {% else %}
               {% if a.author.name == "Joey Litalien" %}
                 <b>{{ a.author.name }}</b>{% if forloop.length != 1 %}, {% endif %}
               {% else %}
@@ -50,7 +50,7 @@ order: 2
             {% if p.journal-note %}
               ({{ p.journal-note }}),
             {% endif %}
-          </i> 
+          </i>
           {% assign dl = p.downloads %}
           {% if dl.published %} {{ p.month }} {% endif %} {{ p.year }}
         </p>
