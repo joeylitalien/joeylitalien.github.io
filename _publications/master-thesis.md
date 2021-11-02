@@ -5,21 +5,21 @@ short-title: LVRS
 title: Learning Visibility in Ray Space
 format-title: Learning Visibility in Ray Space
 authors:
-    - author: 
+    - author:
         name: Joey Litalien
         institution: McGill University
         link: https://joeylitalien.github.io
 
 journal: Master's thesis
 journal-note: M.Eng.
-volume: 
-number: 
+volume:
+number:
 month: December
 year: 2018
 
 thumbnail: /assets/thumbnails/mthesis-thumb.png
 teaser: /assets/teasers/mthesis-teaser.png
-teaser-caption: 
+teaser-caption:
 
 abstract: >
     Soft shadows from area lights are essential in generating compelling photorealistic images but require tracing secondary rays to evaluate visibility for direct lighting. This computation is costly and, as such, is usually replaced by image- or geometry-based approximations for real-time rendering. In this work, we investigate the use of deep learning techniques to solve the visibility problem. By treating occlusion as a binary classification task, we train a per-object artificial neural network that estimates the directional visibility profile in ray space. We test on low-tomoderate complexity meshes with different light sources and show that a simple feedforward neural network classifier is partially capable of generalizing to unseen light positions. Unfortunately, our model has difficulties reconstructing shadows past a certain distance and cannot accurately resolve shadows in all directions.
@@ -27,10 +27,10 @@ abstract: >
 
 downloads:
     paper:
-        file: 
-        size: 
+        file:
+        size:
     bibtex:
-        file: 
+        file:
         size:
 
 tex: |
@@ -44,5 +44,6 @@ tex: |
 
 tag: research
 permalink: /publications/masterthesis
-featured: 2
+featured: 3
+publication-date: 1812
 ---

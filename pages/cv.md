@@ -41,7 +41,7 @@ order: 3
 
 # Publications & Projects
 <div class="container cv">
-See <a href="/portfolio">Portfolio</a>.
+See <a href="/publications">Portfolio</a>.
 </div>
 
 # Selected Awards
@@ -64,7 +64,7 @@ See <a href="/portfolio">Portfolio</a>.
 {% include resume-item.html
       left="June 2021<br>to Present"
       title="Research Intern,"
-      subtitle="Facebook Reality Labs (FRL) Research, Redmond, WA, USA (<i>Remote</i>)"
+      subtitle="Reality Labs (RL) Research (prev. Facebook Reality Labs), Redmond, WA, USA (<i>Remote</i>)"
       description="Mentors: Feng Liu & Lei Xiao"
 %}
 

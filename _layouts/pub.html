@@ -41,6 +41,9 @@ layout: default
       {% if page.authors.first.author.order == 1 %}
         *Authors with equal contribution
       {% endif %}
+      {%- if page.internship-note -%}
+        †{{ page.internship-note }}
+      {%- endif -%}
     </p>
 
     <!-- Teaser figure-->

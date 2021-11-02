@@ -6,25 +6,25 @@ title: Delayed Rejection Metropolis Light Transport
 format-title: Delayed Rejection Metropolis Light Transport
 summary: Applying delayed rejection MCMC to light transport simulation
 authors:
-    - author: 
+    - author:
         name: Damien Rioux-Lavoie
         institution: McGill University
         link: https://riouxld21.github.io/research
         order: 1
-    - author: 
+    - author:
         name: Joey Litalien
         institution: McGill University
         link: https://joeylitalien.github.io
         order: 1
-    - author: 
+    - author:
         name: Adrien Gruson
         institution: McGill University
         link: https://beltegeuse.github.io/research/
-    - author: 
+    - author:
         name: Toshiya Hachisuka
         institution: The University of Tokyo
         link: https://www.ci.i.u-tokyo.ac.jp/~hachisuka/
-    - author: 
+    - author:
         name: Derek Nowrouzezahrai
         institution: McGill University
         link: http://www.cim.mcgill.ca/~derek/
@@ -45,7 +45,7 @@ teaser-caption: "We generalize the Metropolis–Hastings algorithm with delayed 
 abstract: |
     Designing robust mutation strategies for primary sample space Metropolis light transport is a challenging problem: poorly-tuned mutations both hinder state space exploration and introduce structured image artifacts. Scenes with complex materials, lighting and geometry make hand-designing strategies that remain optimal over the entire state space infeasible. Moreover, these difficult regions are often sparse in state space, and so relying exclusively on intricate—and often expensive—proposal mechanisms can be wasteful where simpler inexpensive mechanisms are more sample efficient. We generalize Metropolis–Hastings light transport to employ a flexible two-stage mutation strategy based on delayed rejection Markov chain Monte Carlo. Our approach generates multiple proposals based on the failure of previous ones, all while preserving Markov chain ergodicity. This allows us to reduce error while maintaining fast global exploration and low correlation across chains. Direct application of delayed rejection to light transport leads to low acceptance probabilities, and so we also propose a novel transition kernel to alleviate this issue. We benchmark our approach on several applications including <i>bold-then-timid</i> and <i>cheap-then-expensive</i> proposals across different light transport algorithms. Our method is applicable to any primary sample space algorithm with minimal implementation effort, producing consistently better results on a variety of challenging scenes.
 
-# video: 
+# video:
 
 acknowledgements: Computing resources were provided by the National Systems of Compute Canada. This research was partially funded by the Natural Sciences and Engineering Council of Canada (RGPIN-2018-05669) and the Japan Society for the Promotion of Science KAKENHI (18KK0309).
 
@@ -95,4 +95,5 @@ tex: |
 tag: research
 permalink: /publications/drmlt
 featured: 2
+publication-date: 2003
 ---
