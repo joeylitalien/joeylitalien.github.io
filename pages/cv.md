@@ -62,7 +62,7 @@ See <a href="/publications">Portfolio</a>.
 # Research & Academic Experience
 <div class="container cv">
 {% include resume-item.html
-      left="June 2021<br>to Present"
+      left="June 2021<br>to January 2022"
       title="Research Intern,"
       subtitle="Reality Labs (RL) Research (prev. Facebook Reality Labs), Redmond, WA, USA (<i>Remote</i>)"
       description="Mentors: Feng Liu & Lei Xiao"
