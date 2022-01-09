@@ -44,7 +44,7 @@ order: 3
 See <a href="/publications">Portfolio</a>.
 </div>
 
-# Selected Awards
+# Awards
 <div class="container cv">
 {% include resume-item.html
       left="2021<br>2019<br>2019<br>2019<br>2017/18"
@@ -62,9 +62,9 @@ See <a href="/publications">Portfolio</a>.
 # Research & Academic Experience
 <div class="container cv">
 {% include resume-item.html
-      left="June 2021<br>to January 2022"
+      left="June 2021<br>to Jan 2022"
       title="Research Intern,"
-      subtitle="Reality Labs (RL) Research (prev. Facebook Reality Labs), Redmond, WA, USA (<i>Remote</i>)"
+      subtitle="Reality Labs (RL) Research, Meta, Redmond, WA, USA (<i>Remote</i>)"
       description="Mentors: Feng Liu & Lei Xiao"
 %}
 
@@ -83,19 +83,19 @@ See <a href="/publications">Portfolio</a>.
 %}
 
 {% include resume-item.html
-      left="2018/19"
-      title="Technical Paper Reviewer,"
-      subtitle="ACM SIGGRAPH"
+      left="2018/19/22"
+      title="Technical Paper Reviewer"
+      subtitle=""
+      description="ACM SIGGRAPH, CVPR ('22)"
 %}
 
 {% include resume-item.html
-      left="<br>Summer 2017<br>2017<br>Fall 2014"
+      left="<br>Summer 2017<br>2017"
       title="Grader,"
       subtitle="Departments of ECE & Mathematics, McGill University"
       description="<ul>
         <li>ECSE 689: Realistic Image Synthesis (<i>graduate</i>)</li>
         <li>ECSE 222: Digital Logic (<i>undergraduate</i>)</li>
-        <li>MATH 235: Abstract Algebra I (<i>undergraduate</i>)</li>
       </ul>"
 %}
 </div>
