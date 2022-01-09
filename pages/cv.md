@@ -10,7 +10,7 @@ order: 3
 # Education
 <div class="container cv">
 {% include resume-item.html
-      left="Jan 2019<br> to Present"
+      left="Jan 2019<br> to Spring 2023<br>(Expected)"
       title="McGill University,"
       subtitle="Montréal, QC, Canada"
       description="<ul>
