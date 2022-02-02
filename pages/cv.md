@@ -47,8 +47,9 @@ See <a href="/publications">Portfolio</a>.
 # Awards
 <div class="container cv">
 {% include resume-item.html
-      left="2021<br>2019<br>2019<br>2019<br>2017/18"
-      title="Facebook Fellowship Award (AR/VR Computer Graphics) Finalist<br>
+      left="2022<br>2021<br>2019<br>2019<br>2019<br>2017/18"
+      title="Meta Ph.D. Research Fellowship (AR/VR Computer Graphics)<br>
+             Facebook Fellowship Award (AR/VR Computer Graphics) Finalist<br>
              NSERC Postgraduate Scholarship – Doctoral Program (PGS D)<br>
              McGill Engineering Doctorate Award<br>
              Hydro-Québec Doctoral Fellowship in Engineering<br>
