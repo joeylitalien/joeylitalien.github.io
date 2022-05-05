@@ -74,7 +74,7 @@ downloads:
     main:
         url: https://nv-tlabs.github.io/DIBRPlus
     doi:
-        url: #
+        url: https://papers.nips.cc/paper/2021/hash/c0f971d8cd24364f2029fcb9ac7b71f5-Abstract.html
     supplementary:
         file: #
         size: #

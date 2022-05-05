@@ -131,7 +131,12 @@ layout: default
         {% endif %}
         {% if dl.talk-video.url %}
         <li><span class="fa-li"><i class="fab fa-youtube"></i></span>
-          <a href="{{ dl.talk-video.url }}">Short talk ({{ dl.talk-video.venue }})</a>
+          <a href="{{ dl.talk-video.url }}">Presentation ({{ dl.talk-video.venue }})</a>
+        </li>
+        {% endif %}
+        {% if dl.talk-video2.url %}
+        <li><span class="fa-li"><i class="fab fa-youtube"></i></span>
+          <a href="{{ dl.talk-video2.url }}">Talk ({{ dl.talk-video2.venue }})</a>
         </li>
         {% endif %}
         <!-- {% if dl.video.url %}

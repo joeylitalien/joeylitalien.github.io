@@ -14,4 +14,5 @@ Montréal, QC H3A 0E9<br>
 Canada
 
 <div class="alert">
-  Due to current measures for COVID-19, I am not on campus until further notice. Please reach me by email.
+  I am not on campus until further notice, so please reach me by email.
+</div>

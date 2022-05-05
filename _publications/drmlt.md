@@ -71,6 +71,9 @@ downloads:
         file: #DRMLT-Video.mp4
         size: #100MB
         url: https://www.youtube.com/embed/m22d-cTcubc
+    talk-video:
+        url: https://www.youtube.com/watch?v=m22d-cTcubc
+        venue: SIGGRAPH
     code:
         published: True
         file: #DRMLT-Code.zip

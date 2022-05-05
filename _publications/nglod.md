@@ -92,7 +92,7 @@ downloads:
     main:
         url: https://nv-tlabs.github.io/nglod/
     doi:
-        url: #
+        url: https://openaccess.thecvf.com/content/CVPR2021/html/Takikawa_Neural_Geometric_Level_of_Detail_Real-Time_Rendering_With_Implicit_3D_CVPR_2021_paper.html
     supplementary:
         file: #
         size: #
@@ -105,8 +105,11 @@ downloads:
     video:
         file: #
         size: #
-        url: #
+        url: https://www.youtube.com/embed/0cJZn_hV2Ms
     talk-video:
+        url: https://www.youtube.com/watch?v=0cJZn_hV2Ms
+        venue: CVPR
+    talk-video2:
         url: https://www.youtube.com/watch?v=Pi7W6XrFtMs
         venue: Toronto Geometry Colloquium
     code:
