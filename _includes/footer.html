@@ -27,6 +27,13 @@
             </a>
           </li>
           {% endif %}
+          {% if site.mastodon_username %}
+          <li>
+            <a rel="me" href="https://fosstodon.org/@{{ site.mastodon_username }}">
+              <i class="fab fa-mastodon"></i>
+            </a>
+          </li>
+          {% endif %}
           {% if site.mathstack_username %}
           <li>
             <a href="https://math.stackexchange.com/users/{{ site.mathstack_username }}">
