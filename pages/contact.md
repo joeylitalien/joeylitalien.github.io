@@ -13,6 +13,6 @@ Macdonald Engineering Building, Room 456 <br>
 Montréal, QC H3A 0E9<br>
 Canada
 
-<div class="alert">
+<!-- <div class="alert">
   I am not on campus until further notice, so please reach me by email.
-</div>
+</div> -->

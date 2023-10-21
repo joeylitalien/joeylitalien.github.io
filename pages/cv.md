@@ -10,7 +10,7 @@ order: 3
 # Education
 <div class="container cv">
 {% include resume-item.html
-      left="Jan 2019<br> to Spring 2023<br>(Expected)"
+      left="Jan 2019<br> to Winter 2024<br>(Expected)"
       title="McGill University,"
       subtitle="Montréal, QC, Canada"
       description="<ul>
@@ -63,6 +63,13 @@ See <a href="/publications">Portfolio</a>.
 # Research & Academic Experience
 <div class="container cv">
 {% include resume-item.html
+      left="April 2023<br>to July 2023"
+      title="Research Intern,"
+      subtitle="Adobe Research, London, UK"
+      description="Mentor: Iliyan Georgiev"
+%}
+
+{% include resume-item.html
       left="June 2021<br>to Jan 2022"
       title="Research Intern,"
       subtitle="Reality Labs (RL) Research, Meta, Redmond, WA, USA (<i>Remote</i>)"
@@ -84,13 +91,6 @@ See <a href="/publications">Portfolio</a>.
 %}
 
 {% include resume-item.html
-      left="2018/19/22"
-      title="Technical Paper Reviewer"
-      subtitle=""
-      description="ACM SIGGRAPH, CVPR ('22)"
-%}
-
-{% include resume-item.html
       left="<br>Summer 2017<br>2017"
       title="Grader,"
       subtitle="Departments of ECE & Mathematics, McGill University"
@@ -104,8 +104,15 @@ See <a href="/publications">Portfolio</a>.
 # Talks & Leadership
 <div class="container cv">
 {% include resume-item.html
+      left="Jun 2022"
+      title="Real‐time Rendering of Neural Implicit 3D Shapes,"
+      subtitle="<i>EPFL, Lausanne, Switzerland</i>"
+      description=""
+%}
+
+{% include resume-item.html
       left="2017/18/19"
-      title="MOTOGRAPH,"
+      title="GRAPHQUON,"
       subtitle="<i>a graphics research seminar</i>, Montréal/Toronto, QC/ON, Canada"
       description="Best presentation award (2017)"
 %}
@@ -133,7 +140,7 @@ See <a href="/publications">Portfolio</a>.
 {% include resume-item.html
       skills=true
       left="Programming<br>AI Libaries<br>Tools<br>Web<br>Languages"
-      description="C++14 · C · Python 3 · Bash/UNIX — Familiar with OpenGL · GLSL<br>PyTorch · Keras · scikit-learn — Familiar with TensorFlow<br>
-        vim · git · MATLAB · Mathematica · Maplesoft · LaTeX · Illustrator<br>HTML5 · CSS3/Sass · JavaScript · MeteorJS — Familiarity with MongoDB<br>English (full professional proficiency) · Français (mother tongue)"
+      description="Python 3 · C++17 / C · Bash — Familiarity with CUDA · GLSL · OpenGL<br>PyTorch · Kaolin · PyTorch3D · nanobind · Mitsuba 3 — Familiarity with TensorFlow · JAX<br>
+        git · vim · Docker · slurm · Visual Code · CLion · LATEX · Adobe Illustrator · Blender<br>HTML5 · CSS3/Sass · JavaScript — Familiarity with MongoDB<br>English (full professional proficiency) · Français (mother tongue)"
 %}
 </div>
