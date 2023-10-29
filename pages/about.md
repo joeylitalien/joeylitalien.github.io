@@ -15,7 +15,7 @@ I appreciate aesthetics, minimalism, and design of all kinds. Music-wise I enjoy
 If you would like to reach me, shoot me an <a href="mailto:{{site.email}}">email.</a>
 
 ---
-For the typography enthusiasts, font is [San Francisco](https://developer.apple.com/fonts) on macOS, [Segoe UI](https://docs.microsoft.com/en-us/typography/font-list/segoe-ui) on Windows and [Roboto](https://fonts.google.com/specimen/Roboto) on Linux. Icons are from [Tabler](https://tabler-icons.io/). Top-left icon is an outline of the [Stanford bunny](https://graphics.stanford.edu/software/scanview/models/bunny.html). This website was entirely coded with [Jekyll][jekyll]. Styling is my own take on the [Minima](https://github.com/jekyll/minima) Jekyll theme. Also note that despite my last name, I am _not_ Italian (but I do like pasta).
+For the typography enthusiasts, font is [San Francisco](https://developer.apple.com/fonts) on macOS, [Segoe UI](https://docs.microsoft.com/en-us/typography/font-list/segoe-ui) on Windows and [Roboto](https://fonts.google.com/specimen/Roboto) on Linux. Icons are from [Tabler](https://tabler-icons.io/). This website was entirely coded with [Jekyll][jekyll]. Styling is my own take on the [Minima](https://github.com/jekyll/minima) Jekyll theme. Also note that despite my last name, I am _not_ Italian (but I do like pasta).
 
 [math-cs]: http://www.mcgill.ca/study/2013-2014/faculties/science/undergraduate/programs/bachelor-science-bsc-joint-honours-mathematics-and-computer
 [mcgill]: http://www.mcgill.ca
