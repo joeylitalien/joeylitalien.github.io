@@ -66,27 +66,27 @@ layout: default
       <h3>Publication</h3>
       <ul class="fa-ul">
         {% if dl.paper.file and dl.published %}
-        <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+        <li><span class="fa-li"><i class="ti ti-file-type-pdf"></i></span>
           <a href="{{ dl.paper.file }}">Paper (author's version), PDF ({{ dl.paper.size}})</a>
         </li>
         {% endif %}
         {% if dl.paper.file-lowres %}
-        <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+        <li><span class="fa-li"><i class="ti ti-file-type-pdf"></i></span>
           <a href="{{ dl.paper.file-low }}">Paper (low-quality), PDF ({{ dl.paper.size-lowres}})</a>
         </li>
         {% endif %}
         {% if dl.arxiv.url %}
-        <li><span class="fa-li"><i class="fas fa-atlas"></i></span>
+        <li><span class="fa-li"><i class="ti ti-notebook"></i></span>
           <a href="{{ dl.arxiv.url }}">arXiv version</a> &ndash; external link
         </li>
         {% endif %}
         {% if dl.doi.url %}
-        <li><span class="fa-li"><i class="fas fa-atlas"></i></span>
+        <li><span class="fa-li"><i class="ti ti-notebook"></i></span>
           <a href="{{ dl.doi.url }}">Publisher's official version</a> &ndash; external link, may require a subscription
         </li>
         {% endif %}
         {% if dl.main.url %}
-        <li><span class="fa-li"><i class="fas fa-star"></i></span>
+        <li><span class="fa-li"><i class="ti ti-square-asterisk"></i></span>
           <a href="{{ dl.main.url }}">Primary website</a> &ndash; external link
         </li>
         {% endif %}
@@ -95,12 +95,12 @@ layout: default
       <h3>Supplementals</h3>
       <ul class="fa-ul">
         {% if dl.supplementary.file %}
-        <li><span class="fa-li"><i class="far fa-file-archive"></i></span>
+        <li><span class="fa-li"><i class="ti ti-file-zip"></i></span>
           <a href="{{ dl.supplementary.file }}">Supplemental archive with interactive viewer, ZIP ({{ dl.supplementary.size }})</a>
         </li>
         {% endif %}
         {% if dl.supplementary.url %}
-        <li><span class="fa-li"><i class="far fa-eye"></i></span>
+        <li><span class="fa-li"><i class="ti ti-eye-search"></i></span>
           <a href="{{ dl.supplementary.url }}">Interactive/additional result comparisons (web)</a> &ndash; full offline version of the supplemental, including interactive comparisons and convergence plots
         </li>
         {% endif %}
@@ -110,12 +110,12 @@ layout: default
       <h3>Slides</h3>
       <ul class="fa-ul">
         {% if dl.slides.file %}
-        <li><span class="fa-li"><i class="far fa-file-pdf"></i></span>
+        <li><span class="fa-li"><i class="ti ti-file-type-pdf"></i></span>
           <a href="{{ dl.slides.file }}">Presentation slides, PDF ({{ dl.video.size }})</a>
         </li>
         {% endif %}
         {% if dl.slides.file-key %}
-        <li><span class="fa-li"><i class="far fa-file-image"></i></span>
+        <li><span class="fa-li"><i class="ti ti-slideshow"></i></span>
           <a href="{{ dl.slides.file-key }}">Presentation slides, Keynote ({{ dl.slides.size-key }})</a>
         </li>
         {% endif %}
@@ -130,12 +130,12 @@ layout: default
         </li>
         {% endif %}
         {% if dl.talk-video.url %}
-        <li><span class="fa-li"><i class="fab fa-youtube"></i></span>
+        <li><span class="fa-li"><i class="ti ti-brand-youtube"></i></span>
           <a href="{{ dl.talk-video.url }}">Presentation ({{ dl.talk-video.venue }})</a>
         </li>
         {% endif %}
         {% if dl.talk-video2.url %}
-        <li><span class="fa-li"><i class="fab fa-youtube"></i></span>
+        <li><span class="fa-li"><i class="ti ti-brand-youtube"></i></span>
           <a href="{{ dl.talk-video2.url }}">Talk ({{ dl.talk-video2.venue }})</a>
         </li>
         {% endif %}
@@ -155,7 +155,7 @@ layout: default
         </li>
         {% endif %}
         {% if dl.code.url %}
-          <li><span class="fa-li"><i class="fab fa-github"></i></span>
+          <li><span class="fa-li"><i class="ti ti-brand-github"></i></span>
           {% if dl.code.published %}
             <a href="{{ dl.code.url }}">Code repository (Git)</a>
           {% else %}
@@ -168,7 +168,7 @@ layout: default
       {% if dl.bibtex.file %}
       <h3>BibTeX</h3>
       <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fas fa-quote-left"></i></span>
+        <li><span class="fa-li"><i class="ti ti-quote"></i></span>
           <a href="{{ dl.bibtex.file }}">BibTeX Reference ({{ dl.bibtex.size }})</a>
         </li>
         {% endif %}

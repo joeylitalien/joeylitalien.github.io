@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-icon: <i class="far fa-address-card"></i>
+icon: <i class="ti ti-id-badge-2"></i>
 button:
 permalink: resume
 order: 3
@@ -10,7 +10,7 @@ order: 3
 # Education
 <div class="container cv">
 {% include resume-item.html
-      left="Jan 2019<br> to Winter 2024<br>(Expected)"
+      left="Jan 2019<br> to Apr 2024<br>(Expected)"
       title="McGill University,"
       subtitle="Montréal, QC, Canada"
       description="<ul>

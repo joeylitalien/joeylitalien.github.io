@@ -735,7 +735,9 @@ i.fa-xs {
   font-size: 18px; }
 
 .teaser {
-  margin-bottom: 6px; }
+  margin-bottom: 6px; 
+  border: 1px solid #eee;
+}
 
 .video-container {
   position: relative;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-icon: <i class="far fa-envelope"></i>
+icon: <i class="ti ti-address-book"></i>
 permalink: /contact/
 order: 5
 ---

@@ -55,8 +55,8 @@ doi:
 month: January
 year: 2021
 
-thumbnail: /assets/thumbnails/nglod-thumb.png
-thumbnail-video: /assets/thumbnails/nglod-thumb.mp4
+thumbnail: /assets/thumbnails/nglod-thumb2.png
+#thumbnail-video: /assets/thumbnails/nglod-thumb.mp4
 teaser: /assets/teasers/nglod-teaser.png
 teaser-caption: "We are able to fit shapes of varying complexity, style, scale, with consistently good quality, while being able to leverage the geometry for shading, ambient occlusion, and even shadows with secondary rays."
 

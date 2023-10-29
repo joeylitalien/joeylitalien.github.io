@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-icon: <i class="far fa-clipboard"></i>
+icon: <i class="ti ti-news"></i>
 permalink: /publications/
 order: 2
 ---
@@ -55,25 +55,25 @@ order: 2
           {% if dl.published %} {{ p.month }} {% endif %} {{ p.year }}
         </p>
         <ul class="fa-ul inline-list">
-          <li class="fa-li"><i class="fas fa-globe-americas"></i>
+          <li class="fa-li"><i class="ti ti-world"></i>
             <a href="{{ p.permalink }}">Project page</a>
           </li>
           {% if dl.published %}
-            <li class="fa-li"><i class="far fa-file-pdf"></i>
+            <li class="fa-li"><i class="ti ti-file-type-pdf"></i>
               <a href="{{ dl.paper.file }}">Paper ({{ dl.paper.size }} pdf)</a>
             </li>
             {% if dl.doi.url %}
-            <li class="fa-li"><i class="fas fa-atlas"></i>
+            <li class="fa-li"><i class="ti ti-notebook"></i>
               <a href="{{ dl.doi.url }}">Publisher's version</a>
             </li>
             {% endif %}
             {% if dl.supplementary.file %}
-            <li class="fa-li"><i class="far fa-file-archive"></i>
+            <li class="fa-li"><i class="ti ti-file-zip"></i>
               <a href="{{ dl.supplementary.url }}">Supp. ({{ dl.supplementary.size }} .zip)</a>
             </li>
             {% endif %}
             {% if dl.code.url and dl.code.published %}
-            <li class="fa-li"><i class="fab fa-github"></i>
+            <li class="fa-li"><i class="ti ti-code"></i>
               <a href="{{ dl.code.url }}">Code</a>
             </li>
             {% endif %}
@@ -107,12 +107,12 @@ order: 2
         <p class="justified">{{ p.summary }}</p>
         <ul class="fa-ul inline-list">
           {% if p.report.file %}
-          <li class="fa-li"><i class="far fa-file-pdf"></i>
+          <li class="fa-li"><i class="ti ti-file-type-pdf"></i>
             <a href="{{ p.report.file }}">Report ({{ p.report.size }} pdf)</a>
           </li>
           {% endif %}
           {% if p.code.url %}
-          <li class="fa-li"><i class="fab fa-github"></i>
+          <li class="fa-li"><i class="ti ti-brand-github"></i>
             <a href="{{ p.code.url }}">Code (Git)</a>
           </li>
           {% endif %}

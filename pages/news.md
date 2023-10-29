@@ -1,7 +1,7 @@
 ---
 layout: page
 title: News
-icon: <i class="far fa-newspaper"></i>
+icon: <i class="ti ti-calendar-event"></i>
 permalink: /news/
 order: -1
 ---

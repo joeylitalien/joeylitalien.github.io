@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-icon: <i class="far fa-user-circle"></i>
+icon: <i class="ti ti-user-square-rounded"></i>
 permalink: /about/
 order: 4
 ---
