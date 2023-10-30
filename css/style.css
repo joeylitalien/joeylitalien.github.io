@@ -237,8 +237,8 @@ sup {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #FFFFFF;
-      border: 1px solid #EEF0FA;
+      background-color: #222;
+      border: 1px solid #444;
       border-radius: 5px;
       text-align: right;
       z-index: 9999; }
@@ -258,7 +258,7 @@ sup {
           width: 18px;
           height: 15px; }
           .site-nav .menu-icon > svg path {
-            fill: #222; }
+            fill: #ddd; }
       .site-nav .trigger {
         clear: both;
         display: none; }

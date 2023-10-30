@@ -7,7 +7,7 @@ permalink: resume
 order: 3
 ---
 
-# Education
+# <i class="ti ti-school"></i> Education
 <div class="container cv">
 {% include resume-item.html
       left="Jan 2019<br> to Apr 2024<br>(Expected)"
@@ -39,12 +39,12 @@ order: 3
 %}
 </div>
 
-# Publications & Projects
+# <i class="ti ti-news"></i> Publications & Projects
 <div class="container cv">
 See <a href="/publications">Portfolio</a>.
 </div>
 
-# Awards
+# <i class="ti ti-award"></i> Awards
 <div class="container cv">
 {% include resume-item.html
       left="2022<br>2021<br>2019<br>2019<br>2019<br>2017/18"
@@ -60,7 +60,7 @@ See <a href="/publications">Portfolio</a>.
 %}
 </div>
 
-# Research & Academic Experience
+# <i class="ti ti-eyeglass-2"></i> Research & Academic Experience
 <div class="container cv">
 {% include resume-item.html
       left="April 2023<br>to July 2023"
@@ -101,7 +101,7 @@ See <a href="/publications">Portfolio</a>.
 %}
 </div>
 
-# Talks & Leadership
+# <i class="ti ti-podium"></i> Talks & Leadership
 <div class="container cv">
 {% include resume-item.html
       left="Jun 2022"
@@ -135,7 +135,7 @@ See <a href="/publications">Portfolio</a>.
 %}
 </div>
 
-# Skills
+# <i class="ti ti-mood-cog"></i> Skills
 <div class="container cv">
 {% include resume-item.html
       skills=true
