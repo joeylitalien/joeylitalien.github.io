@@ -59,9 +59,9 @@ downloads:
     doi:
         url: https://dl.acm.org/doi/abs/10.1145/3388538
     supplementary:
-        file: http://adrien-gruson.com/research/2020_DRMLT/drmlt-supplemental.zip
+        file: https://data.adrien-gruson.com/research/2020_DRMLT/drmlt-supplemental.zip
         size: 185MB
-        url: http://adrien-gruson.com/research/2020_DRMLT
+        url: https://data.adrien-gruson.com/research/2020_DRMLT
     slides:
         file: #DRMLT-Presentation.pdf
         size: #30MB
