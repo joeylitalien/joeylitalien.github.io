@@ -12,6 +12,8 @@ googlescholar_username: 511IDxQAAAAJ
 mathstack_username: 49109/hubble
 linkedin_username: joeylitalien
 spotify_username: 12162861472
+bandcamp_username: lowkey_joey
+discogs_username: milpotent
 
 # Build settings
 markdown: kramdown
@@ -21,4 +23,6 @@ collections:
     projects:
         output: true
     news:
+        output: true
+    scenes:
         output: true

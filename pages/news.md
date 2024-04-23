@@ -1,6 +1,6 @@
 ---
 layout: page
-title: News
+title: All News
 icon: <i class="ti ti-calendar-event"></i>
 permalink: /news/
 order: -1

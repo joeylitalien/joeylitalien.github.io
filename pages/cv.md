@@ -10,7 +10,7 @@ order: 3
 # <i class="ti ti-school"></i> Education
 <div class="container cv">
 {% include resume-item.html
-      left="Jan 2019<br> to Apr 2024<br>(Expected)"
+      left="Jan 2019<br> to Aug 2024<br>(Expected)"
       title="McGill University,"
       subtitle="Montréal, QC, Canada"
       description="<ul>
@@ -103,6 +103,14 @@ See <a href="/publications">Portfolio</a>.
 
 # <i class="ti ti-podium"></i> Talks & Leadership
 <div class="container cv">
+{% include resume-item.html
+      left="Mar 2024"
+      title="Neural Materials: A New Paradigm for Photorealistic Appearances,"
+      subtitle="<i>ÉTS, Montréal, Canada</i>"
+      description="Montreal ACM SIGGRAPH keynote"
+%}
+
+
 {% include resume-item.html
       left="Jun 2022"
       title="Real‐time Rendering of Neural Implicit 3D Shapes,"

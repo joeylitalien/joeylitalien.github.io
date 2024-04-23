@@ -3,7 +3,7 @@ layout: page
 title: Contact
 icon: <i class="ti ti-address-book"></i>
 permalink: /contact/
-order: 5
+order: -1
 ---
 
 ## Downtown Campus
