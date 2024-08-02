@@ -10,7 +10,7 @@ order: 3
 # <i class="ti ti-school"></i> Education
 <div class="container cv">
 {% include resume-item.html
-      left="Jan 2019<br> to Aug 2024<br>(Expected)"
+      left="Jan 2019<br> to Oct 2024<br>(Expected)"
       title="McGill University,"
       subtitle="Montréal, QC, Canada"
       description="<ul>
@@ -42,22 +42,6 @@ order: 3
 # <i class="ti ti-news"></i> Publications & Projects
 <div class="container cv">
 See <a href="/publications">Portfolio</a>.
-</div>
-
-# <i class="ti ti-award"></i> Awards
-<div class="container cv">
-{% include resume-item.html
-      left="2022<br>2021<br>2019<br>2019<br>2019<br>2017/18"
-      title="Meta Ph.D. Research Fellowship (AR/VR Computer Graphics)<br>
-             Facebook Fellowship Award (AR/VR Computer Graphics) Finalist<br>
-             NSERC Postgraduate Scholarship – Doctoral Program (PGS D)<br>
-             McGill Engineering Doctorate Award<br>
-             Hydro-Québec Doctoral Fellowship in Engineering<br>
-             Graduate Excellence Fellowship Awards
-             "
-      subtitle=""
-      description=""
-%}
 </div>
 
 # <i class="ti ti-eyeglass-2"></i> Research & Academic Experience
@@ -98,6 +82,22 @@ See <a href="/publications">Portfolio</a>.
         <li>ECSE 689: Realistic Image Synthesis (<i>graduate</i>)</li>
         <li>ECSE 222: Digital Logic (<i>undergraduate</i>)</li>
       </ul>"
+%}
+</div>
+
+# <i class="ti ti-award"></i> Fellowships & Awards
+<div class="container cv">
+{% include resume-item.html
+      left="2022<br>2021<br>2019<br>2019<br>2019<br>2017/18"
+      title="Meta Ph.D. Research Fellowship (AR/VR Computer Graphics)<br>
+             Facebook Fellowship Award (AR/VR Computer Graphics) Finalist<br>
+             NSERC Postgraduate Scholarship – Doctoral Program (PGS D)<br>
+             McGill Engineering Doctorate Award<br>
+             Hydro-Québec Doctoral Fellowship in Engineering<br>
+             Graduate Excellence Fellowship Awards
+             "
+      subtitle=""
+      description=""
 %}
 </div>
 

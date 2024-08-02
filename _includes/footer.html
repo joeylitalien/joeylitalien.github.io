@@ -70,6 +70,13 @@
             </a>
           </li>
           {% endif %}
+          {% if site.soundcloud_username %}
+          <li>
+            <a href="https://soundcloud.com/{{ site.soundcloud_username }}">
+              <i class="ti ti-brand-soundcloud"></i>
+            </a>
+          </li>
+          {% endif %}
           {% if site.discogs_username %}
           <li>
             <a href="https://www.discogs.com/user/{{ site.discogs_username }}/collection">

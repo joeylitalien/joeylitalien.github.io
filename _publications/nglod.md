@@ -139,6 +139,6 @@ tex: |
 
 tag: research
 permalink: /publications/nglod
-featured: 1
+featured: 2
 publication-date: 2101
 ---
