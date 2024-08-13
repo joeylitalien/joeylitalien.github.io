@@ -79,6 +79,8 @@ layout: default
               {% else %}
                 {% if a.author.name == "Joey Litalien" %}
                   <b>{{ firstshort }}. {{ lastname }}</b>{% if forloop.length != 1 %}, {% endif %}
+                {% elsif a.author.name == "Anonymous Authors" %}
+                  {{ a.author.name }}
                 {% else %}
                   {{ firstshort }}. {{ lastname }},
                 {% endif %}

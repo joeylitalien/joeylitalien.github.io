@@ -39,7 +39,11 @@ order: 2
               {% if a.author.name == "Joey Litalien" %}
                 <b>{{ a.author.name }}</b>{% if forloop.length != 1 %}, {% endif %}
               {% else %}
-                {{ a.author.name }},
+                {% if a.author.name == "Anonymous Authors" %}
+                   {{ a.author.name }}
+                {% else %}
+                  {{ a.author.name }},
+                {% endif %}
               {% endif %}
             {% endif %}
           {% endfor %}

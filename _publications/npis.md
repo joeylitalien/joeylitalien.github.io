@@ -7,25 +7,29 @@ format-title: "Neural Product Importance Sampling via Warp Composition"
 summary:
 authors:
     - author:
-        name: Joey Litalien
-        institution: McGill University†
-        link: https://joeylitalien.github.io
-    - author:
-        name: Miloš Hašan
-        institution: Adobe Research
-        link: http://www.miloshasan.net/
-    - author:
-        name: Fujun Luan
-        institution: Adobe Research
-        link: https://luanfujun.com/
-    - author:
-        name: Krishna Mullia
-        institution: Adobe Research
-        link: https://krishnamullia.com/
-    - author:
-        name: Iliyan Georgiev
-        institution: Adobe Research
-        link: https://iliyan.com/publications
+        name: Anonymous Authors
+        institution: #
+        link: #
+    # - author:
+    #     name: Joey Litalien
+    #     institution: McGill University†
+    #     link: https://joeylitalien.github.io
+    # - author:
+    #     name: Miloš Hašan
+    #     institution: Adobe Research
+    #     link: http://www.miloshasan.net/
+    # - author:
+    #     name: Fujun Luan
+    #     institution: Adobe Research
+    #     link: https://luanfujun.com/
+    # - author:
+    #     name: Krishna Mullia
+    #     institution: Adobe Research
+    #     link: https://krishnamullia.com/
+    # - author:
+    #     name: Iliyan Georgiev
+    #     institution: Adobe Research
+    #     link: https://iliyan.com/publications
 
 internship-note: Work partly done during an internship at Adobe
 journal: ACM SIGGRAPH Conference Papers
