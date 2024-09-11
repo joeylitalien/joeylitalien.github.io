@@ -43,10 +43,10 @@ layout: default
       {%- endif -%},
       {{ page.month }} {{ page.year }}</br>
       {% if page.authors.first.author.order == 1 %}
-        *Authors with equal contribution
+      <span class="author-note">*Authors with equal contribution</span>
       {% endif %}
       {%- if page.internship-note -%}
-        †{{ page.internship-note }}
+        <span class="author-note">†{{ page.internship-note }}</span>
       {%- endif -%}
     </p>
 

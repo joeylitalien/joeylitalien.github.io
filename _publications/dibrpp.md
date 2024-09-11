@@ -95,13 +95,13 @@ downloads:
         published: false
         file: #
         size: #
-        url: https://github.com/nv-tlabs/dibrpp
+        url: #
     bibtex:
         file: /assets/dibrpp/dibrpp.bib
         size: 0.5KB
 
 tex: |
-    @inproceedings{chen2021dibrpp,
+    @inproceedings{Chen:2021:DIBRPP,
         title = {{DIB-R++}: Learning to Predict Lighting and Material with a Hybrid Differentiable Renderer,
         author = {Wenzheng Chen and
                   Joey Litalien and

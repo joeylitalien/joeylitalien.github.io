@@ -122,7 +122,7 @@ downloads:
         size: 0.5KB
 
 tex: |
-    @article{takikawa2021nglod,
+    @article{Takikawa:2021:NGLOD,
         title = {Neural Geometric Level of Detail: Real-time Rendering with Implicit {3D} Shapes},
         author = {Towaki Takikawa and
                   Joey Litalien and
@@ -133,8 +133,9 @@ tex: |
                   Alec Jacobson and
                   Morgan McGuire and
                   Sanja Fidler},
+        journal = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
         year = {2021},
-        journal = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}
+        doi = {10.1109/cvpr46437.2021.01120}
     }
 
 tag: research
