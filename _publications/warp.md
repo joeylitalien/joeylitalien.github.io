@@ -40,7 +40,7 @@ year: 2024
 
 thumbnail: /assets/thumbnails/warp-thumb.png
 thumbnail-video: #
-teaser: /assets/teasers/warp-teaser.png
+teaser: /assets/teasers/warp-teaser-transparent.png
 teaser-caption: |
     Our method composes a neural spline flow <i>head warp</i> with an emitter <i>tail warp</i> to achieve approximate product importance sampling of environment lighting with other terms (cosine and BRDF). Applied to cosine-weighted environment sampling on the Temple scene, we demonstrate significant variance reduction over multiple importance sampling (MIS) at equal rendering time (35 ms, 4 spp). We also visualize the conditional distribution learned by our model at the shading point marked in green. Our learned PDF closely matches the true (unshadowed) product. Our head warp does not have to learn the intricate details of the environment map already captured by the tail warp, and can be represented as a compact normalizing flow that can be baked for fast inference.
 

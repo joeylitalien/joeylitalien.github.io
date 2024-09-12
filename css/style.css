@@ -742,6 +742,12 @@ i.fa-xs {
   border: 1px solid #eee;
 }
 
+
+.teaser-transparent {
+  border-radius: 0px;
+  margin-bottom: 6px; 
+}
+ 
 .video-container {
   position: relative;
   width: 100%;
