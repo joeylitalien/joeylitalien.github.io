@@ -7,6 +7,8 @@ permalink: resume
 order: 3
 ---
 
+<a href="/assets/cv.pdf"><button>Download</button></a>
+
 # <i class="ti ti-school"></i> Education
 <div class="container cv">
 {% include resume-item.html

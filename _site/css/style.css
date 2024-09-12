@@ -612,7 +612,7 @@ button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   font-size: 13px;
-  color: #222;
+  /* color: #222; */
   display: inline-block;
   height: 30px;
   padding: 0 8px;
@@ -622,11 +622,14 @@ button {
   cursor: pointer;
   box-sizing: border-box;
   text-align: center;
-  margin-top: 4px; }
-
-button:hover {
+  margin-top: 4px; 
   color: #1BBC9B;
   border-color: #1BBC9B;
+  background-color: rgba(27, 188, 155, 0.1); }
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
   background-color: rgba(27, 188, 155, 0.1); }
 
 button:focus {
