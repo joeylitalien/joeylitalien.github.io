@@ -61,9 +61,9 @@ downloads:
     arxiv:
         url: #
     main:
-        url: #
+        url: 
     doi:
-        url: #
+        url: https://doi.org/10.1145/3680528.3687566
     supplementary:
         file: #
         size: #
@@ -80,6 +80,9 @@ downloads:
     talk-video:
         url: #
         venue: #
+    ff-video:
+        url: /assets/warp/neural_warp_fast_forward.mp4
+        size: 2.6MB
     code:
         published: false
         file: #

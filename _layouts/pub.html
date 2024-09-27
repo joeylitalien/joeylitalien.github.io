@@ -181,6 +181,14 @@ layout: default
     {% endif %}
 
     <!-- Video embedding -->
+    {% if dl.ff-video.url %}
+    <h1>Fast-forward Video</h1>
+    <div class="video-container">
+      <iframe frameborder="0" class="video" src="{{ dl.ff-video.url }}"></iframe>
+    </div>
+    {% endif %}
+
+    <!-- Video embedding -->
     {% if dl.video.url %}
     <h1>Video</h1>
     <div class="video-container">
