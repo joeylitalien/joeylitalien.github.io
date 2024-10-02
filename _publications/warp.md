@@ -59,7 +59,7 @@ downloads:
         file-lowres: #
         size-lowres: #
     arxiv:
-        url: #
+        url: https://arxiv.org/abs/2409.18974
     main:
         url: 
     doi:
