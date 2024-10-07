@@ -184,7 +184,9 @@ layout: default
     {% if dl.ff-video.url %}
     <h1>Fast-forward Video</h1>
     <div class="video-container">
-      <iframe frameborder="0" class="video" src="{{ dl.ff-video.url }}" sandbox></iframe>
+      <video width="100%" controls>
+        <source src="{{ dl.ff-video.url }}" type="video/mp4">
+      </video>
     </div>
     {% endif %}
 
