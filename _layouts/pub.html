@@ -48,7 +48,18 @@ layout: default
       {%- if page.internship-note -%}
         <span class="author-note">†{{ page.internship-note }}</span>
       {%- endif -%}
+      {% if page.jury %}
+      Jury: 
+        {% for a in page.jury %}
+        {% if forloop.last and forloop.length != 1 %}
+          and <a href="{{a.author.link}}">{{ a.author.name }}</a>
+        {% else %}
+          <a href="{{a.author.link}}">{{ a.author.name }}</a>,
+        {% endif %}
+        {% endfor %}
+      {% endif %}
     </p>
+
 
     <!-- Teaser figure-->
     <figure>
@@ -235,7 +246,8 @@ layout: default
         {% endif %}
       {% endfor %}
       {{ page.title }}. <i>{{ page.journal }}</i>,
-      {{ page.volume }}({{ page.number }}), Article {{ page.article-no }},
+      {% if page.volume %}{{ page.volume }}{% endif %}
+      {% if page.number %}({{ page.number }}), Article {{ page.article-no }},{% endif %}
       {{ page.month }} {{ page.year }}.
     </blockquote class="justified">
 

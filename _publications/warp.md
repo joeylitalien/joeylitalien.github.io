@@ -28,8 +28,8 @@ authors:
         link: https://iliyan.com
 
 internship-note: Work partly done during an internship at Adobe Research, UK
-journal: ACM SIGGRAPH Asia 2024 (Conference Proceedings)
-journal-note: 
+journal: ACM SIGGRAPH Asia 2024
+journal-note: Conference Proceedings
 spotlight-note:
 volume: 1
 number: 1

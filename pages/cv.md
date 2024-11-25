@@ -12,12 +12,12 @@ order: 3
 # <i class="ti ti-school"></i> Education
 <div class="container cv">
 {% include resume-item.html
-      left="Jan 2019<br> to Oct 2024<br>(Expected)"
+      left="Jan 2019<br> to Dec 2024<br>"
       title="McGill University,"
       subtitle="Montréal, QC, Canada"
       description="<ul>
         <li><i>Doctor of Philosophy</i>, Electrical & Computer Engineering (ECE)</li>
-        <li>Advisor: Derek Nowrouzezahrai</li>
+        <li>Thesis: <i>Statistical and Learning‑based Methods for High‑performance Rendering</i><br>Advisor: Derek Nowrouzezahrai</li>
       </ul>
       "
 %}
@@ -151,6 +151,6 @@ See <a href="/publications">Portfolio</a>.
       skills=true
       left="Programming<br>AI Libaries<br>Tools<br>Web<br>Languages"
       description="Python 3 · C++17 / C · Bash — Familiarity with CUDA · GLSL · OpenGL<br>PyTorch · Kaolin · PyTorch3D · nanobind · Mitsuba 3 — Familiarity with TensorFlow · JAX<br>
-        git · vim · Docker · slurm · Visual Code · CLion · LATEX · Adobe Illustrator · Blender<br>HTML5 · CSS3/Sass · JavaScript — Familiarity with MongoDB<br>English (full professional proficiency) · Français (mother tongue)"
+        git · vim · Docker · slurm · Visual Code · CLion · LaTeX · Adobe Illustrator · Blender<br>HTML5 · CSS3/Sass · JavaScript — Familiarity with MongoDB<br>English (full professional proficiency) · Français (mother tongue)"
 %}
 </div>

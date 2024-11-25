@@ -30,7 +30,7 @@ authors:
         link: http://www.cim.mcgill.ca/~derek/
 
 journal: ACM Transactions on Graphics
-journal-note: Presented at <b>SIGGRAPH</b>
+journal-note: Presented at SIGGRAPH
 volume: 39
 number: 3
 article-no: 26

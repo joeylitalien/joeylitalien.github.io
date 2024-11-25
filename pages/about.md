@@ -7,9 +7,9 @@ order: 4
 ---
 
 <div id="profile"></div>
-I am a Ph.D. candidate at [McGill University][mcgill] where I am part of the [McGill Graphics Lab (MGL)][mgl]. I got my B.Sc. from the same university in [Honours Mathematics and Computer Science][math-cs] in 2015 and my M.Eng. in Graphics in 2018. I speak both French (native) and English.
+I earned my Ph.D. from [McGill University][mcgill] in 2024, where I was part of the [McGill Graphics Lab (MGL)][mgl]. I got my B.Sc. from the same university in [Honours Mathematics and Computer Science][math-cs] in 2015 and my M.Eng. in Graphics in 2018. I speak both French (native) and English.
 
-Outside of research, I appreciate aesthetics, minimalism, and design of all kinds. Music-wise, I enjoy house and techno, and sometimes I even [record my mixes](https://soundcloud.com/joeylitalien) and [spin records](https://www.discogs.com/user/milpotent/collection). I was a [soccer referee](https://www.soccerquebec.org/fr/index.html) for more than ten years. Above all, I love problem solving and discovering new algorithms related to rendering, both physics-based and real-time.
+Outside of research, I appreciate aesthetics, minimalism, and design of all kinds. Music-wise, I enjoy house and techno, and sometimes [I record mixes](https://soundcloud.com/joeylitalien) and [spin some records](https://www.discogs.com/user/milpotent/collection). I was a [soccer referee](https://www.soccerquebec.org/fr/index.html) for more than ten years. Above all, I love problem solving and discovering new algorithms related to rendering, both physics-based and real-time.
 
 If you would like to reach me, shoot me an <a href="mailto:{{site.email}}">email.</a>
 

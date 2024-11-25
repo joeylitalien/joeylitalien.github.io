@@ -37,7 +37,7 @@ tex: |
     @masterthesis{Litalien:2019:LVRS,
        author = {Litalien, Joey},
        title = {Learning Visibility in {R}ay {S}pace},
-       schol = {McGill University}
+       school = {McGill University}
        year = {2018},
        month = dec
     }
