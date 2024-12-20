@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Blog
-icon: <i class="fas fa-rss-square"></i>
+icon: <i class="fas fa-coffee"></i>
 permalink: /blog/
-order: -1
+order: 3
 ---
 
 <div class="home">

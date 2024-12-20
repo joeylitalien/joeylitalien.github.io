@@ -176,11 +176,11 @@ hr {
 
 #profile {
   float: right;
-  width: 180px;
-  height: 180px;
-  margin: 0px 0px 16px 16px;
+  width: 160px;
+  height: 160px;
+  margin: 0px 0px 32px 32px;
   border-radius: 100%;
-  background: url("/assets/me_2020.jpg");
+  background: url("/assets/me_2021.png");
   background-size: contain;
   cursor: pointer; }
 
@@ -825,4 +825,8 @@ i.fa-xs {
 
 .author-note {
   color: #828282;
+}
+
+.post-content {
+  text-align: justify;
 }

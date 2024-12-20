@@ -21,6 +21,8 @@ markdown: kramdown
 collections:
     publications:
         output: true
+    theses:
+        output: true
     projects:
         output: true
     news:
