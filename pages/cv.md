@@ -9,6 +9,68 @@ order: 3
 
 <a href="/assets/cv.pdf"><button>Download</button></a>
 
+# <i class="ti ti-briefcase"></i> Professional Experience
+<div class="container cv">
+{% include resume-item.html
+      left="Aug 2025<br>to Present"
+      title="Senior Software Engineer,"
+      subtitle="Tesla Autopilot, Palo Alto, CA, USA"
+      description="Simulation team"
+%}
+
+{% include resume-item.html
+      left="Dec 2025<br>to Aug 2025"
+      title="Software Engineer,"
+      subtitle="Tesla Autopilot, Palo Alto, CA, USA"
+      description="Simulation team"
+%}
+</div>
+
+# <i class="ti ti-flask-2"></i> Research Experience
+<div class="container cv">
+{% include resume-item.html
+      left="April 2023<br>to July 2023"
+      title="Research Intern,"
+      subtitle="Adobe Research, London, UK"
+      description="Mentor: Iliyan Georgiev"
+%}
+
+{% include resume-item.html
+      left="June 2021<br>to Jan 2022"
+      title="Research Intern,"
+      subtitle="Reality Labs (RL) Research, Meta, Redmond, WA, USA (<i>Remote</i>)"
+      description="Mentors: Feng Liu & Lei Xiao"
+%}
+
+{% include resume-item.html
+      left="May 2020<br>to April 2021"
+      title="Research Intern,"
+      subtitle="NVIDIA AI Labs, Toronto, ON, Canada (<i>Remote</i>)"
+      description="Mentors: Sanja Fidler & Morgan McGuire"
+%}
+</div>
+
+# <i class="ti ti-books"></i> Academic Experience
+<div class="container cv">
+
+{% include resume-item.html
+      left="Fall 2018/19"
+      title="Teaching Assistant,"
+      subtitle="Department of ECE, McGill University"
+      description="ECSE 446/546: Realistic/Advanced Image Synthesis (<i>graduate and undergraduate</i>)"
+%}
+
+{% include resume-item.html
+      left="<br>Summer 2017<br>2017"
+      title="Grader,"
+      subtitle="Departments of ECE & Mathematics, McGill University"
+      description="<ul>
+        <li>ECSE 689: Realistic Image Synthesis (<i>graduate</i>)</li>
+        <li>ECSE 222: Digital Logic (<i>undergraduate</i>)</li>
+      </ul>"
+%}
+</div>
+
 # <i class="ti ti-school"></i> Education
 <div class="container cv">
 {% include resume-item.html
@@ -44,47 +106,6 @@ order: 3
 # <i class="ti ti-news"></i> Publications & Projects
 <div class="container cv">
 See <a href="/publications">Portfolio</a>.
-</div>
-
-# <i class="ti ti-eyeglass-2"></i> Research & Academic Experience
-<div class="container cv">
-{% include resume-item.html
-      left="April 2023<br>to July 2023"
-      title="Research Intern,"
-      subtitle="Adobe Research, London, UK"
-      description="Mentor: Iliyan Georgiev"
-%}
-
-{% include resume-item.html
-      left="June 2021<br>to Jan 2022"
-      title="Research Intern,"
-      subtitle="Reality Labs (RL) Research, Meta, Redmond, WA, USA (<i>Remote</i>)"
-      description="Mentors: Feng Liu & Lei Xiao"
-%}
-
-{% include resume-item.html
-      left="May 2020<br>to April 2021"
-      title="Research Intern,"
-      subtitle="NVIDIA AI Labs, Toronto, ON, Canada (<i>Remote</i>)"
-      description="Mentors: Sanja Fidler & Morgan McGuire"
-%}
-
-{% include resume-item.html
-      left="Fall 2018/19"
-      title="Teaching Assistant,"
-      subtitle="Department of ECE, McGill University"
-      description="ECSE 446/546: Realistic/Advanced Image Synthesis (<i>graduate and undergraduate</i>)"
-%}
-
-{% include resume-item.html
-      left="<br>Summer 2017<br>2017"
-      title="Grader,"
-      subtitle="Departments of ECE & Mathematics, McGill University"
-      description="<ul>
-        <li>ECSE 689: Realistic Image Synthesis (<i>graduate</i>)</li>
-        <li>ECSE 222: Digital Logic (<i>undergraduate</i>)</li>
-      </ul>"
-%}
 </div>
 
 # <i class="ti ti-award"></i> Fellowships & Awards
@@ -150,7 +171,7 @@ See <a href="/publications">Portfolio</a>.
 {% include resume-item.html
       skills=true
       left="Programming<br>AI Libaries<br>Tools<br>Web<br>Languages"
-      description="Python 3 · C++17 / C · Bash — Familiarity with CUDA · GLSL · OpenGL<br>PyTorch · Kaolin · PyTorch3D · nanobind · Mitsuba 3 — Familiarity with TensorFlow · JAX<br>
+      description="Python 3 · C++ / C · Bash — Familiarity with CUDA · GLSL · OpenGL<br>PyTorch · Mitsuba 3 · pybind11/nanobind · Warp · Kaolin — Familiarity with TensorFlow · JAX<br>
         git · vim · Docker · slurm · Visual Code · CLion · LaTeX · Adobe Illustrator · Blender<br>HTML5 · CSS3/Sass · JavaScript — Familiarity with MongoDB<br>English (full professional proficiency) · Français (mother tongue)"
 %}
 </div>
