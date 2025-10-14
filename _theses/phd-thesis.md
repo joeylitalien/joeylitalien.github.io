@@ -47,12 +47,9 @@ abstract: >
 
 
 downloads:
-    published: False
-    paper:
-        file: /assets/phd-thesis/thesis.pdf
-        size: X.XMB
-        file-lowres: /assets/phd-thesis/thesis-lowres.pdf
-        size-lowres: X.XMB
+    published: True
+    main:
+        url: https://www.escholarship.mcgill.ca/concern/theses/bg257m314?locale=en
     bibtex:
         file:
         size:

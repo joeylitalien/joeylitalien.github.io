@@ -108,6 +108,6 @@ tex: |
 
 tag: research
 permalink: /publications/warp
-featured: 1
+featured: 2
 publication-date: 2412
 ---
