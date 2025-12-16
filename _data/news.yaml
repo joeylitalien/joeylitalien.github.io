@@ -1,3 +1,9 @@
+- date: 2025.12.15
+  news: We have one paper conditionally accepted to <a href="https://eg2026.github.io/">Eurographics 2026</a>! More info to come.
+
+- date: 2025.12.14
+  news: Matthieu Josse will be travelling to <a href="https://sa2025.conference-schedule.org/presentation/?id=papers_1766&sess=sess122">Hong Kong</a> to present our work at SIGGRAPH Asia 2025.
+
 - date: 2025.10.13
   news: Our work on adaptive neural kernels for gradient-domain rendering is now <a href="publications/ank">available online</a>.
 
