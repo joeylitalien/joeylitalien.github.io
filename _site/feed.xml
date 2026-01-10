@@ -5,9 +5,75 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Oct 2025 21:15:09 -0700</pubDate>
-    <lastBuildDate>Mon, 13 Oct 2025 21:15:09 -0700</lastBuildDate>
+    <pubDate>Mon, 15 Dec 2025 20:36:21 -0800</pubDate>
+    <lastBuildDate>Mon, 15 Dec 2025 20:36:21 -0800</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>Music highlights from 2025</title>
+        <description>&lt;p&gt;Like last year, I’ve kept track of a lot of bass-heavy music releases that I’ve thoroughly enjoyed throughout the year. Below are my favourites&lt;/p&gt;
+
+&lt;p&gt;As always, please consider &lt;strong&gt;buying your music,&lt;/strong&gt; especially on &lt;a href=&quot;https://isitbandcampfriday.com/&quot;&gt;BandCamp Fridays&lt;/a&gt; to support your favorite producers and DJs.&lt;/p&gt;
+
+&lt;h1 id=&quot;original-tracks&quot;&gt;Original tracks&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;remixes--edits&quot;&gt;Remixes &amp;amp; Edits&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;eps&quot;&gt;EPs&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;lps&quot;&gt;LPs&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;va-compilations&quot;&gt;VA compilations&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tratratrax.bandcamp.com/album/no-pare-sigue-sigue-4&quot;&gt;TraTraTrax – no pare, sigue sigue 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://unknown-untitled.bandcamp.com/album/uu013&quot;&gt;unknown untitled – uu013&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wisdomteethuk.bandcamp.com/album/pattern-gardening&quot;&gt;Wisdom Teeth - Pattern Garderning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;mixes&quot;&gt;Mixes&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://soundcloud.com/gala-festival/tornado-wallace-live-from-the-patio&quot;&gt;Tornado Wallace - Live from The Patio @ GALA’25&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Despite most not being recorded, here are the best sets I attended this year. If you have a chance to see any of them in your city, please do yourself a favor and grab a ticket.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Aurora Halal &amp;amp; DJ Nobu @ Midnight East, Tokyo (07.12.24)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=uFwB4tEM-EY&quot;&gt;Avalon Emerson &amp;amp; Friends @ Under the K Bridge, Brooklyn (04.05.24)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DVS1 @ Stereo, Montreal (14.10.24)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Evian Christ @ MUTEK, Montreal (23.08.24)&lt;/li&gt;
+  &lt;li&gt;Felipe Gordon @ Public Records, Brooklyn (26.10.24)&lt;/li&gt;
+  &lt;li&gt;Jennifer Loveless @ Panorama Bar, Berlin (20.06.24)&lt;/li&gt;
+  &lt;li&gt;Hector Oaks @ Vol. X, Montreal (24.11.24)&lt;/li&gt;
+  &lt;li&gt;Octo Octa @ MUTEK, Montreal (21.08.24)&lt;/li&gt;
+  &lt;li&gt;Skee Mask &amp;amp; Objekt @ SAT, Montreal (27.09.24)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 15 Dec 2025 09:00:00 -0800</pubDate>
+        <link>http://localhost:4000/music/2025/12/15/music.html</link>
+        <guid isPermaLink="true">http://localhost:4000/music/2025/12/15/music.html</guid>
+        
+        
+        <category>music</category>
+        
+      </item>
     
       <item>
         <title>Some notes on the post-Ph.D. CS job market</title>
