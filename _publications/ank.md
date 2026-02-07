@@ -9,7 +9,7 @@ authors:
     - author:
         name: Matthieu Josse
         institution: École polytechnique
-        link: #
+        link: https://www.linkedin.com/in/matthieu-josse-948728228/
     - author:
         name: Joey Litalien
         institution: Independent†
@@ -98,6 +98,6 @@ tex: |
 
 tag: research
 permalink: /publications/ank
-featured: 1
+featured: 2
 publication-date: 2512
 ---
