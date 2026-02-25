@@ -20,8 +20,8 @@ authors:
         link: https://profs.etsmtl.ca/agruson
 
 internship-note: Work partly done during time at McGill University, Canada.
-journal: Eurographics 2026
-journal-note: Computer Graphics Forum
+journal: Computer Graphics Forum
+journal-note: Eurographics 2026
 spotlight-note:
 volume: 1
 number: 1
@@ -93,7 +93,7 @@ tex: |
         journal = {Computer Graphics Forum},
         year = {2026},
         month = feb,
-        doi = {XX.XXXX/XXXXXXXX.XXXX.XXXXX}
+        doi = {10.1111/cgf.70408}
     }
 
 tag: research

@@ -87,7 +87,7 @@ downloads:
         published: false
         file: #
         size: #
-        url: hhttps://github.com/joeylitalien/neural-warp
+        url: #
     bibtex:
         file: /assets/warp/warp.bib
         size: 0.4KB
