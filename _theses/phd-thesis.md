@@ -58,7 +58,7 @@ tex: |
     @phdthesis{Litalien:2024:Thesis,
        author = {Litalien, Joey},
        title = {Statistical and Learning‑based Methods for High‑performance Rendering},
-       school = {McGill University}
+       school = {McGill University},
        year = {2024},
        month = dec
     }
