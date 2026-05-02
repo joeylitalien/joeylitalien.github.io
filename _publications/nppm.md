@@ -53,7 +53,7 @@ downloads:
     arxiv:
         url:
     main:
-        url: 
+        url: https://justinbenoist.github.io/publications/nppm.html
     doi:
         url: #
     supplementary:
@@ -76,10 +76,10 @@ downloads:
         url: #
         size: #
     code:
-        published: false
+        published: true
         file: #
         size: #
-        url: #
+        url: https://github.com/JustinBenoist/NPPM
     bibtex:
         file: /assets/nppm/nppm.bib
         size: 0.3KB
