@@ -26,8 +26,8 @@ spotlight-note:
 volume: 1
 number: 1
 article-no: 1
-doi: #
-month: February
+doi: 10.1111/cgf.70408
+month: March
 year: 2026
 
 thumbnail: /assets/thumbnails/nppm-thumb.png
@@ -55,7 +55,7 @@ downloads:
     main:
         url: https://justinbenoist.github.io/publications/nppm.html
     doi:
-        url: #
+        url: https://onlinelibrary.wiley.com/doi/10.1111/cgf.70408
     supplementary:
         file: #
         size: #
@@ -92,12 +92,12 @@ tex: |
                   Adrien Gruson},
         journal = {Computer Graphics Forum},
         year = {2026},
-        month = feb,
+        month = mar,
         doi = {10.1111/cgf.70408}
     }
 
 tag: research
 permalink: /publications/nppm
 featured: 1
-publication-date: 2602
+publication-date: 2603
 ---
